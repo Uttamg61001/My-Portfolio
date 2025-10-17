@@ -308,7 +308,7 @@ const Projects = () => {
           </div>
 
           {/* Additional Projects Note */}
-          <div className="mt-12 text-center animate-fade-in">
+          {/* <div className="mt-12 text-center animate-fade-in">
             <Card className="p-6 card-gradient border-border inline-block">
               <div className="flex items-center gap-3">
                 <Users className="text-primary" size={20} />
@@ -321,7 +321,7 @@ const Projects = () => {
                 </div>
               </div>
             </Card>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

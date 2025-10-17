@@ -9,7 +9,7 @@ export default function Document() {
 
         {/* Primary Meta Tags */}
         <title>
-          Vikas Pandey - Frontend Developer | React.js & Next.js Specialist
+          Uttam Singhal - Frontend Developer | React.js & Next.js Specialist
         </title>
         <meta
           name="description"

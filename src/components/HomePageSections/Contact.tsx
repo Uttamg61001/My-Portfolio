@@ -18,21 +18,21 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'vikaspandey8635@gmail.com',
-      href: 'mailto:vikaspandey8635@gmail.com',
+      value: 'uttamg61001@gmail.com',
+      href: 'mailto:uttamg61001@gmail.com',
       color: 'from-blue-500 to-cyan-500'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 8307225020',
-      href: 'tel:+918307225020',
+      value: '+91 7062467187',
+      href: 'tel:+917062467187',
       color: 'from-green-500 to-emerald-500'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Yamunanagar, Haryana',
+      value: 'Sri Ganganagar, Rajasthan',
       href: '#',
       color: 'from-purple-500 to-pink-500'
     }
@@ -233,7 +233,7 @@ const Contact = () => {
           </div>
 
           {/* Availability Status */}
-          <div className="mt-12 text-center animate-fade-in">
+          {/* <div className="mt-12 text-center animate-fade-in">
             <Card className="p-6 card-gradient border-border inline-block">
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
@@ -243,7 +243,7 @@ const Contact = () => {
                 </div>
               </div>
             </Card>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -44,7 +44,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-xl font-bold text-gradient">
-              Vikas Pandey
+              Uttam
             </h1>
           </div>
 

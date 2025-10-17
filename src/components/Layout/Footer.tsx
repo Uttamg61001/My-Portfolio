@@ -26,7 +26,7 @@ const Footer = () => {
   const socialLinks = [
     { name: "GitHub", icon: Github, href: "https://github.com" },
     { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com" },
-    { name: "Email", icon: Mail, href: "mailto:vikaspandey8635@gmail.com" },
+    { name: "Email", icon: Mail, href: "mailto:uttamg61001@gmail.com" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -49,7 +49,7 @@ const Footer = () => {
             {/* Brand & Description (spans 2 columns on lg) */}
             <div className="col-span-2">
               <h3 className="text-2xl font-bold text-gradient mb-4">
-                Vikas Pandey
+                Uttam Singhal
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6 max-w-md">
                 Passionate front-end developer creating beautiful, responsive
@@ -62,17 +62,17 @@ const Footer = () => {
                 <div className="flex items-center gap-3 text-sm">
                   <MapPin size={16} className="text-primary" />
                   <span className="text-muted-foreground">
-                    Yamunanagar, Haryana, India
+                    Sri Ganganagar, Rajasthan, India
                   </span>
                 </div>
                 <div className="flex items-center gap-3 text-sm">
                   <Phone size={16} className="text-primary" />
-                  <span className="text-muted-foreground">+91 8307225020</span>
+                  <span className="text-muted-foreground">+91 7062467187</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm">
                   <Mail size={16} className="text-primary" />
                   <span className="text-muted-foreground">
-                    vikaspandey8635@gmail.com
+                    uttamg61001@gmail.com
                   </span>
                 </div>
               </div>
@@ -137,7 +137,7 @@ const Footer = () => {
           {/* Bottom Footer */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
             <div className="flex flex-wrap justify-center sm:justify-start items-center gap-2 text-sm text-muted-foreground">
-              <span>© {currentYear} Vikas Pandey. Made with</span>
+              <span>© {currentYear} Uttam Singhal. Made with</span>
               <Heart size={14} className="text-red-500 animate-pulse" />
               <span>using React & TypeScript</span>
             </div>

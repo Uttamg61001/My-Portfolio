@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail, Download, Code, Sparkles } from "lucide-react";
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const roles = useMemo(
-    () => ["Front-End Developer", "React Js", "Problem Solver"],
+    () => ["UI/UX Designer", "Graphic Designer", "Front-End Developer"],
     []
   );
   const [roleIndex, setRoleIndex] = useState(0);
@@ -67,13 +67,13 @@ const Hero = () => {
           <div className="animate-fade-in mb-4 md:mb-6">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-medium mb-4">
               <Sparkles size={16} />
-              Welcome to my portfolio
+              Crafting Modern Interfaces with Next.js & Figma
             </span>
           </div>
 
           {/* Main Title */}
           <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 animate-slide-up leading-tight">
-            Hi, I&apos;m <span className="text-gradient">Vikas Pandey</span>
+            Hi, I&apos;m <span className="text-gradient">Uttam Singhal</span>
           </h1>
 
           {/* Dynamic Role */}
@@ -93,10 +93,8 @@ const Hero = () => {
             className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl sm:max-w-3xl mx-auto mb-6 md:mb-12 leading-relaxed animate-slide-up px-3 sm:px-0"
             style={{ animationDelay: "0.4s" }}
           >
-            Passionate front-end developer with 2+ years of expertise in
-            React.js, TypeScript, and modern web technologies. I specialize in
-            building responsive, user-friendly applications that enhance user
-            experience.
+            Hi! I’m Uttam Singhal. With 2.9 years of experience in UI/UX and frontend, 
+            I specialize in designing user-centered interfaces using Figma, Adobe XD, and modern web technologies.
           </p>
 
           {/* Action Buttons */}
@@ -128,7 +126,7 @@ const Hero = () => {
             style={{ animationDelay: "0.8s" }}
           >
             <a
-              href="https://github.com"
+              href="https://github.com/Uttamg61001"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 sm:p-4 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:glow-effect"
@@ -136,7 +134,7 @@ const Hero = () => {
               <Github size={22} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/uttam-singhal-489130244/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 sm:p-4 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:glow-effect"
@@ -144,7 +142,7 @@ const Hero = () => {
               <Linkedin size={22} />
             </a>
             <a
-              href="mailto:vikaspandey8635@gmail.com"
+              href="mailto:uttamg61001@gmail.com"
               className="p-3 sm:p-4 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:glow-effect"
             >
               <Mail size={22} />

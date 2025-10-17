@@ -89,19 +89,18 @@ const About = () => {
               style={{ animationDelay: "0.2s" }}
             >
               <div className="space-y-6">
-                <Card className="p-8 card-gradient border-border">
+                <Card className="p-4 card-gradient border-border">
                   <h3 className="text-xl font-semibold mb-6 flex items-center gap-3">
                     <span className="w-2 h-8 bg-gradient-to-b from-primary to-accent rounded-full" />
                     Professional Summary
                   </h3>
 
                   <p className="text-muted-foreground leading-relaxed mb-6">
-                    I am a passionate front-end developer with 2 years of
-                    expertise in React.js, HTML, CSS, and JavaScript. I
-                    specialize in building responsive, user-friendly web
-                    applications that enhance the overall user experience. My
-                    work prioritizes both design and functionality, ensuring a
-                    smooth and seamless web interaction.
+                   Experienced UI/UX Designer specializing in creating intuitive,
+                   user-centered designs for web and mobile platforms. Skilled
+                   in wireframing, prototyping, and responsive design, delivering
+                   functional and visually appealing interfaces. Adept at aligning
+                   user needs with business goals to enhance digital experiences.
                   </p>
 
                   {/* Key Highlights */}
@@ -124,7 +123,7 @@ const About = () => {
                 </Card>
 
                 {/* Current Status */}
-                <Card className="p-6 card-gradient border-border text-center">
+                {/* <Card className="p-6 card-gradient border-border text-center">
                   <h4 className="font-semibold text-lg mb-2">Current Status</h4>
                   <div className="flex justify-center w-full">
                     <Badge
@@ -138,7 +137,7 @@ const About = () => {
                     Ready to contribute to innovative projects and grow with
                     dynamic teams
                   </p>
-                </Card>
+                </Card> */}
               </div>
             </div>
           </div>
