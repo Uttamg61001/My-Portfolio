@@ -1,47 +1,31 @@
-import { Badge } from "@/components/ui/badge";
+"use client";
+import { useState } from "react";
+import { motion } from "motion/react";
 import { Card } from "@/components/ui/card";
-import { Users, Zap } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Lens } from "../ui/lens";
+import { cn } from "@/lib/utils";
 
-const Projects = () => {
+export default function Projects() {
   const projects = [
     {
       title: "Rank Door - Digital Marketing Agency Website",
       description:
         "A conversion-focused digital marketing agency website built for a Brisbane-based agency specializing in SEO, Google Ads, local business optimization, and web development services with personalized client approach.",
-      duration: "Project",
-      category: "Digital Marketing Agency",
-      features: [
-        "SEO-optimized landing pages with conversion-focused design",
-        "Service showcase with performance-driven messaging strategy",
-        "Client testimonials integration with verified feedback system",
-        "Local business focus with Brisbane and Gold Coast targeting",
-        "Lead generation contact forms with no-pressure consultation approach",
-      ],
+      category: "thumbnail 1.jpg",
       technologies: [
-        "Next.js",
+        "JS.png",
         "TypeScript",
         "Tailwind CSS",
         "SEO Optimization",
         "Responsive Design",
       ],
-      highlights: {
-        performance: "Conversion Optimized",
-        responsive: "Mobile First Design",
-        features: "Local SEO Focus",
-      },
     },
     {
       title: "FutureSafeGroup - Binary MLM Platform",
       description:
         "A sophisticated binary-tree-based MLM platform with automatic salary and reward systems, featuring secure payment processing and performance-based incentives.",
-      duration: "Project",
-      category: "MLM Platform",
-      features: [
-        "Binary tree pairing logic with auto-reward distribution",
-        "Monthly auto-salary credit system based on achievements",
-        "Secure team joining via payment deposit/withdrawal",
-        "Tree node logic for reward eligibility and performance benefits",
-      ],
+      category: "thumbnail 2.jpg",
       technologies: [
         "Next.js",
         "TypeScript",
@@ -49,62 +33,26 @@ const Projects = () => {
         "Node.js",
         "Payment APIs",
       ],
-      highlights: {
-        performance: "Enterprise Scale",
-        responsive: "Complex Logic",
-        features: "Binary Tree System",
-      },
     },
     {
       title: "EquipSee - Dynamic Dashboard Platform",
       description:
         "A comprehensive equipment management platform with dynamic modules, pin-based dashboards, and location-based alert systems for organizations.",
-      duration: "Feb 2024 – Present",
-      category: "Business Platform",
-      features: [
-        "Dynamic modules with pin-based dashboards",
-        "Location-based alerts and notifications",
-        "Organization-specific role-permission system",
-        "Module control and customization features",
-      ],
+      category: "thumbnail 3.jpg",
       technologies: ["Next.js", "Tailwind CSS", "Shadcn/UI", "TypeScript"],
-      highlights: {
-        performance: "Real-time Alerts",
-        responsive: "Role-based Access",
-        features: "Dynamic Modules",
-      },
     },
     {
       title: "Jane Bond BBQ",
       description:
         "A modern restaurant website offering online menu browsing and delivery options. Built with responsive design and smooth user experience.",
-      duration: "Nov 2022 – Jan 2023",
-      category: "Restaurant Website",
-      features: [
-        "Online menu with dynamic filtering",
-        "Delivery tracking system",
-        "Responsive mobile-first design",
-        "SEO optimized pages",
-      ],
+      category: "thumbnail 4.jpg",
       technologies: ["Next.js", "Tailwind CSS", "HTML", "SASS"],
-      highlights: {
-        performance: "95% Lighthouse Score",
-        responsive: "Mobile-First Design",
-        features: "4 Key Features",
-      },
     },
     {
       title: "Business Financial Group (BFG)",
       description:
         "A comprehensive full-service accounting firm platform providing tax services with advanced data management and interactive features.",
-      duration: "Feb 2023 - Nov 2023",
-      category: "Financial Platform",
-      features: [
-        "Advanced data grids with AG-Grid",
-        "File upload with drag & drop",
-        "Rich text editing capabilities",
-        "Interactive dashboards",
-      ],
+      category: "thumbnail 5.jpg",
       technologies: [
         "Next.js",
         "TypeScript",
@@ -113,24 +61,12 @@ const Projects = () => {
         "AG-Grid",
         "React-Quill",
       ],
-      highlights: {
-        performance: "Enterprise Scale",
-        responsive: "Complex UI Components",
-        features: "8+ Integrations",
-      },
     },
     {
       title: "Nainer Platform",
       description:
         "Modern web application with real-time features and IoT integrations, focusing on user experience and performance optimization.",
-      duration: "Ongoing",
-      category: "Web Application",
-      features: [
-        "Real-time data synchronization",
-        "Modern component library",
-        "Socket.io integration",
-        "Firebase notifications",
-      ],
+      category: "thumbnail 6.jpg",
       technologies: [
         "React.js",
         "Socket.io",
@@ -138,24 +74,12 @@ const Projects = () => {
         "Shadcn/UI",
         "Tailwind CSS",
       ],
-      highlights: {
-        performance: "Real-time Updates",
-        responsive: "Modern UI/UX",
-        features: "IoT Integration",
-      },
     },
     {
       title: "EMS Energy Management",
       description:
         "IoT-powered energy management system providing real-time monitoring, analytics, and control over energy consumption.",
-      duration: "Recent",
-      category: "IoT Platform",
-      features: [
-        "Real-time energy monitoring",
-        "Data visualization charts",
-        "Device control interface",
-        "Energy analytics dashboard",
-      ],
+      category: "thumbnail 7.jpg",
       technologies: [
         "React.js",
         "TypeScript",
@@ -163,11 +87,19 @@ const Projects = () => {
         "Chart.js",
         "Tailwind CSS",
       ],
-      highlights: {
-        performance: "IoT Connected",
-        responsive: "Data Visualization",
-        features: "Energy Analytics",
-      },
+    },
+    {
+      title: "EMS Energy Management",
+      description:
+        "IoT-powered energy management system providing real-time monitoring, analytics, and control over energy consumption.",
+      category: "thumbnail 8.jpg",
+      technologies: [
+        "React.js",
+        "TypeScript",
+        "Socket.io",
+        "Chart.js",
+        "Tailwind CSS",
+      ],
     },
   ];
 
@@ -186,146 +118,145 @@ const Projects = () => {
             </p>
           </div>
 
-          {/* Projects Grid */}
+          {/* Project Grid */}
           <div className="grid lg:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <div
+              <motion.div
                 key={index}
                 className="animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <Card className="project-card h-full flex flex-col">
-                  {/* Project Header */}
-                  <div className="p-3 md:p-6 pb-4">
-                    <div className="flex items-start justify-between mb-4">
-                      <div>
-                        <Badge variant="secondary" className="mb-3 text-xs">
-                          {project.category}
-                        </Badge>
-                        <h3 className="text-xl font-semibold text-primary mb-2">
-                          {project.title}
-                        </h3>
-                        {/* <div className="flex items-center gap-2 text-muted-foreground text-sm">
-                          <Calendar size={14} />
-                          <span>{project.duration}</span>
-                        </div> */}
-                      </div>
-                    </div>
-
-                    <p className="text-muted-foreground leading-relaxed mb-6">
-                      {project.description}
-                    </p>
-
-                    {/* Key Features */}
-                    <div className="mb-6">
-                      <h4 className="font-medium mb-3 text-foreground flex items-center gap-2">
-                        <Zap size={16} className="text-primary" />
-                        Key Features
-                      </h4>
-                      <div className="grid gap-2">
-                        {project.features.map((feature, idx) => (
-                          <div
-                            key={idx}
-                            className="flex items-center gap-2 text-sm text-muted-foreground"
-                          >
-                            <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                            {feature}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Project Highlights */}
-                    <div className="grid md:grid-cols-3 gap-4 mb-6">
-                      <div className="text-center p-3 rounded-lg bg-secondary/50">
-                        <div className="text-primary font-semibold text-sm">
-                          {project.highlights.performance}
-                        </div>
-                        <div className="text-xs text-muted-foreground">
-                          Performance
-                        </div>
-                      </div>
-                      <div className="text-center p-3 rounded-lg bg-secondary/50">
-                        <div className="text-primary font-semibold text-sm">
-                          {project.highlights.responsive}
-                        </div>
-                        <div className="text-xs text-muted-foreground">
-                          Design
-                        </div>
-                      </div>
-                      <div className="text-center p-3 rounded-lg bg-secondary/50">
-                        <div className="text-primary font-semibold text-sm">
-                          {project.highlights.features}
-                        </div>
-                        <div className="text-xs text-muted-foreground">
-                          Features
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Technologies */}
-                    <div className="mb-6">
-                      <h4 className="font-medium mb-3 text-foreground">
-                        Technologies Used
-                      </h4>
-                      <div className="flex flex-wrap gap-2">
-                        {project.technologies.map((tech, idx) => (
-                          <Badge
-                            key={idx}
-                            variant="outline"
-                            className="border-primary/20 text-primary text-xs"
-                          >
-                            {tech}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Project Actions */}
-                  {/* <div className="mt-auto p-6 pt-4 border-t border-border">
-                    <div className="flex gap-3">
-                      <Button
-                        size="sm"
-                        className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
-                      >
-                        <ExternalLink size={16} className="mr-2" />
-                        View Live
-                      </Button>
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className="flex-1 border-primary/20 hover:bg-primary hover:text-primary-foreground"
-                      >
-                        <Github size={16} className="mr-2" />
-                        Code
-                      </Button>
-                    </div>
-                  </div> */}
-                </Card>
-              </div>
+                <ProjectCard project={project} />
+              </motion.div>
             ))}
           </div>
-
-          {/* Additional Projects Note */}
-          {/* <div className="mt-12 text-center animate-fade-in">
-            <Card className="p-6 card-gradient border-border inline-block">
-              <div className="flex items-center gap-3">
-                <Users className="text-primary" size={20} />
-                <div className="text-left">
-                  <p className="font-medium">More Projects Available</p>
-                  <p className="text-muted-foreground text-sm">
-                    Including Cyltex, Inventory Management, and other innovative
-                    solutions
-                  </p>
-                </div>
-              </div>
-            </Card>
-          </div> */}
         </div>
       </div>
     </section>
   );
-};
+}
 
-export default Projects;
+/* ---------------------------------------------------
+   Individual Project Card Component
+--------------------------------------------------- */
+function ProjectCard({ project }: any) {
+  const [hovering, setHovering] = useState(false);
+
+  return (
+    <Card className="relative overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-[#1D2235] to-[#121318]">
+      <Rays />
+      <Beams />
+      <div className="relative z-10 p-4 md:p-6">
+        {/* Lens + Image */}
+        <div className="mb-6">
+          <Lens hovering={hovering} setHovering={setHovering}>
+            <img
+              src={project.category}
+              alt={project.title}
+              className="w-full h-full object-cover rounded-2xl"
+            />
+          </Lens>
+        </div>
+
+        {/* Content with Blur on Hover */}
+        <motion.div
+          animate={{
+            filter: hovering ? "blur(2px)" : "blur(0px)",
+          }}
+        >
+          <h3 className="text-xl font-semibold text-primary mb-2">
+            {project.title}
+          </h3>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            {project.description}
+          </p>
+
+          {/* Technologies */}
+          <div>
+            <h4 className="font-medium mb-3 text-foreground">
+              Technologies Used
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {project.technologies.map((tech: any, idx: number) => (
+                <Badge
+                  key={idx}
+                  variant="outline"
+                  className="border-primary/20 text-primary text-xs px-2 py-1"
+                >
+                  {tech.endsWith(".png") || tech.endsWith(".jpg") ? (
+                    <img
+                      src={tech}
+                      alt={tech}
+                      className="w-6 h-6 object-contain"
+                    />
+                  ) : (
+                    tech
+                  )}
+                </Badge>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </Card>
+  );
+}
+
+/* ---------------------------------------------------
+   Glow SVG Components
+--------------------------------------------------- */
+const Beams = () => (
+  <svg
+    width="380"
+    height="315"
+    viewBox="0 0 380 315"
+    fill="none"
+    // xmlns="http://www.w3.org/2000/svg"
+    className="absolute top-0 left-1/2 -translate-x-1/2 w-full pointer-events-none"
+  >
+    <g filter="url(#filter0_f)">
+      <circle cx="34" cy="52" r="114" fill="#4781ff" />
+    </g>
+    <g filter="url(#filter1_f)">
+      <circle cx="332" cy="24" r="102" fill="#8A4BFF" />
+    </g>
+    <g filter="url(#filter2_f)">
+      <circle cx="191" cy="53" r="102" fill="#4781ff" />
+    </g>
+    <defs>
+      <filter id="filter0_f" x="-192" y="-174" width="452" height="452">
+        <feGaussianBlur stdDeviation="56" />
+      </filter>
+      <filter id="filter1_f" x="70" y="-238" width="524" height="524">
+        <feGaussianBlur stdDeviation="80" />
+      </filter>
+      <filter id="filter2_f" x="-71" y="-209" width="524" height="524">
+        <feGaussianBlur stdDeviation="80" />
+      </filter>
+    </defs>
+  </svg>
+);
+
+const Rays = ({ className }: { className?: string }) => (
+  <svg
+    width="380"
+    height="397"
+    viewBox="0 0 380 397"
+    fill="none"
+    // xmlns="http://www.w3.org/2000/svg"
+    className={cn("absolute left-0 top-0 pointer-events-none z-[1]", className)}
+  >
+    <g filter="url(#filter3_f)">
+      <path
+        d="M163.917 -89.0982C173.189 -72.1354 80.9618 2.11525 34.7334 30.1553C-11.495 58.1954 -106.505 97.514 -115.777 80.5512C-125.048 63.5885 -45.0708 -3.23233 1.15763 -31.2724C47.386 -59.3124 154.645 -106.061 163.917 -89.0982Z"
+        fill="#8A50FF"
+        opacity="0.3"
+      />
+    </g>
+    <defs>
+      <filter id="filter3_f" x="-212.518" y="-188.71" width="473.085" height="369.366">
+        <feGaussianBlur stdDeviation="48" />
+      </filter>
+    </defs>
+  </svg>
+);

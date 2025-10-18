@@ -195,26 +195,6 @@ const Experience = () => {
           </div>
 
           {/* Summary Stats */}
-          {/* <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in">
-            <Card className="text-center p-6 card-gradient border-border">
-              <div className="text-2xl font-bold text-primary mb-1">2+</div>
-              <div className="text-muted-foreground text-sm">
-                Years Experience
-              </div>
-            </Card>
-            <Card className="text-center p-6 card-gradient border-border">
-              <div className="text-2xl font-bold text-primary mb-1">10+</div>
-              <div className="text-muted-foreground text-sm">
-                Projects Completed
-              </div>
-            </Card>
-            <Card className="text-center p-6 card-gradient border-border">
-              <div className="text-2xl font-bold text-primary mb-1">30%</div>
-              <div className="text-muted-foreground text-sm">
-                Performance Improvement
-              </div>
-            </Card>
-          </div> */}
 
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in">
             {/* Card 1 - Years Experience */}

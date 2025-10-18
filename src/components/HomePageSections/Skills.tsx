@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useState, useEffect } from "react";
 import { Code, Wrench, Globe, Database, Smartphone, Zap } from "lucide-react";
+import { GlowingEffect } from "../ui/glowing-effect";
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -103,53 +104,7 @@ const Skills = () => {
             </p>
           </div>
 
-          {/* Skills Categories */}
-          {/* <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {skillCategories.map((category, index) => (
-              <div
-                key={index}
-                className="animate-slide-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <Card className="p-6 card-gradient border-border h-full">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div
-                      className={`p-3 rounded-lg bg-gradient-to-r ${category.color} bg-opacity-20`}
-                    >
-                      <category.icon className="text-white" size={24} />
-                    </div>
-                    <h3 className="text-xl font-semibold">{category.title}</h3>
-                  </div>
 
-                  <div className="space-y-4">
-                    {category.skills.map((skill, idx) => (
-                      <div key={idx}>
-                        <div className="flex justify-between items-center mb-2">
-                          <span className="text-sm font-medium">
-                            {skill.name}
-                          </span>
-                          <span className="text-sm text-muted-foreground">
-                            {skill.level}%
-                          </span>
-                        </div>
-                        <div className="skill-bar">
-                          <div
-                            className={`skill-fill ${
-                              isVisible ? "animate-slide-in" : "w-0"
-                            }`}
-                            style={{
-                              width: isVisible ? `${skill.level}%` : "0%",
-                              transitionDelay: `${index * 100 + idx * 50}ms`,
-                            }}
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </Card>
-              </div>
-            ))}
-          </div> */}
 
           {/* Additional Skills */}
           <div className="animate-fade-in">
@@ -184,31 +139,72 @@ const Skills = () => {
 
           {/* Skills Summary */}
           <div className="mt-6 md:mt-12 grid grid-cols-1 md:grid-cols-4 gap-6 animate-fade-in">
-            <Card className="text-center p-6 card-gradient border-border">
-              <Smartphone className="mx-auto text-primary md:mb-3" size={32} />
-              <div className="text-2xl font-bold text-primary md:mb-1">100%</div>
-              <div className="text-muted-foreground text-sm">
-                Responsive Design
+            {/* Card 1 - Responsive Design */}
+            <div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
+              <GlowingEffect
+                spread={40}
+                glow={true}
+                disabled={false}
+                proximity={64}
+                inactiveZone={0.01}
+              />
+              <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D] text-center">
+                <Smartphone className="mx-auto text-primary md:mb-3" size={32} />
+                <div className="text-2xl font-bold text-primary mb-1">100%</div>
+                <div className="text-white text-md">Responsive Design</div>
               </div>
-            </Card>
-            <Card className="text-center p-6 card-gradient border-border">
-              <Globe className="mx-auto text-primary md:mb-3" size={32} />
-              <div className="text-2xl font-bold text-primary md:mb-1">10+</div>
-              <div className="text-muted-foreground text-sm">Technologies</div>
-            </Card>
-            <Card className="text-center p-6 card-gradient border-border">
-              <Code className="mx-auto text-primary md:mb-3" size={32} />
-              <div className="text-2xl font-bold text-primary md:mb-1">2+</div>
-              <div className="text-muted-foreground text-sm">Years Coding</div>
-            </Card>
-            <Card className="text-center p-6 card-gradient border-border">
-              <Zap className="mx-auto text-primary md:mb-3" size={32} />
-              <div className="text-2xl font-bold text-primary md:mb-1">30%</div>
-              <div className="text-muted-foreground text-sm">
-                Performance Gain
+            </div>
+
+            {/* Card 2 - Technologies */}
+            <div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
+              <GlowingEffect
+                spread={40}
+                glow={true}
+                disabled={false}
+                proximity={64}
+                inactiveZone={0.01}
+              />
+              <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D] text-center">
+                <Globe className="mx-auto text-primary md:mb-3" size={32} />
+                <div className="text-2xl font-bold text-primary mb-1">10+</div>
+                <div className="text-white text-md">Technologies</div>
               </div>
-            </Card>
+            </div>
+
+            {/* Card 3 - Years Coding */}
+            <div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
+              <GlowingEffect
+                spread={40}
+                glow={true}
+                disabled={false}
+                proximity={64}
+                inactiveZone={0.01}
+              />
+              <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D] text-center">
+                <Code className="mx-auto text-primary md:mb-3" size={32} />
+                <div className="text-2xl font-bold text-primary mb-1">2+</div>
+                <div className="text-white text-md">Years UI Desiging</div>
+              </div>
+            </div>
+
+            {/* Card 4 - Performance Gain */}
+            <div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
+              <GlowingEffect
+                spread={40}
+                glow={true}
+                disabled={false}
+                proximity={64}
+                inactiveZone={0.01}
+              />
+              <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D] text-center">
+                <Zap className="mx-auto text-primary md:mb-3" size={32} />
+                <div className="text-2xl font-bold text-primary mb-1">30%</div>
+                <div className="text-white text-md">Performance Gain</div>
+              </div>
+            </div>
           </div>
+
+
         </div>
       </div>
     </section>
