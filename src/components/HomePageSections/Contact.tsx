@@ -3,8 +3,11 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
-import { Mail, Phone, MapPin, Download, Send, Github, Linkedin, ExternalLink } from 'lucide-react';
+import { Mail, Phone, MapPin, Download, Send } from 'lucide-react';
 import { useState } from 'react';
+import { FaLinkedinIn, FaInstagram } from "react-icons/fa6";
+import { BsGithub } from "react-icons/bs";
+import axios from 'axios';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -38,25 +41,25 @@ const Contact = () => {
     }
   ];
 
-  const socialLinks = [
+  const socials = [
     {
-      name: 'GitHub',
-      icon: Github,
-      href: 'https://github.com',
-      color: 'hover:bg-gray-800 hover:text-white'
+      id: "github",
+      href: "https://github.com/Uttamg61001",
+      icon: <BsGithub size={32} />,
+      hoverImg: "github.png",
     },
     {
-      name: 'LinkedIn',
-      icon: Linkedin,
-      href: 'https://linkedin.com',
-      color: 'hover:bg-blue-600 hover:text-white'
+      id: "linkedin",
+      href: "https://www.linkedin.com/in/uttam-singhal-489130244/",
+      icon: <FaLinkedinIn size={32} />,
+      hoverImg: "linkedin.png",
     },
     {
-      name: 'Portfolio',
-      icon: ExternalLink,
-      href: '#',
-      color: 'hover:bg-primary hover:text-primary-foreground'
-    }
+      id: "instagram",
+      href: "https://www.instagram.com/uttamg61001/",
+      icon: <FaInstagram size={32} />,
+      hoverImg: "instagram.png",
+    },
   ];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -66,11 +69,35 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // ✅ Updated handleSubmit function
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+
+    try {
+      const res = await axios.post('/api/send-email', formData);
+
+      if (res.data.success) {
+        alert("✅ Message sent successfully!");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        alert(`❌ Failed: ${res.data.error || 'Please try again.'}`);
+      }
+    } catch (error: any) {
+      console.error("Email Error:", error.response?.data || error.message);
+      alert(`Something went wrong! ${error.response?.data?.error || ''}`);
+    }
   };
+
+  const handleResumeDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Uttam.pdf";
+    link.download = "Uttam_Singhal_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const [hovered, setHovered] = useState<string | null>(null);
 
   return (
     <section id="contact" className="py-10 md:py-20 bg-secondary/20">
@@ -92,8 +119,8 @@ const Contact = () => {
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-6">Let&apos;s Connect</h3>
                 <p className="text-muted-foregro]und leading-relaxed mb-8">
-                  I&apos;m always interested in new opportunities, challenging projects, and collaborations. 
-                  Whether you&apos;re a startup looking to build your first product or an established company 
+                  I&apos;m always interested in new opportunities, challenging projects, and collaborations.
+                  Whether you&apos;re a startup looking to build your first product or an established company
                   needing to enhance your web presence, I&apos;d love to hear from you.
                 </p>
 
@@ -120,16 +147,31 @@ const Contact = () => {
                 <div className="mb-8">
                   <h4 className="font-medium mb-4">Follow Me</h4>
                   <div className="flex gap-4">
-                    {socialLinks.map((social, index) => (
+                    {socials.map((s) => (
                       <a
-                        key={index}
-                        href={social.href}
+                        key={s.id}
+                        href={s.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`p-3 rounded-lg bg-muted transition-all duration-300 ${social.color} hover:scale-110 hover:glow-effect`}
-                        title={social.name}
+                        onMouseEnter={() => setHovered(s.id)}
+                        onMouseLeave={() => setHovered(null)}
+                        className="relative p-3 sm:p-4 rounded-full bg-muted transition-all duration-300 hover:scale-110 hover:glow-effect flex items-center justify-center overflow-hidden"
                       >
-                        <social.icon size={20} />
+                        {/* Default Icon */}
+                        <div
+                          className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${hovered === s.id ? "opacity-0" : "opacity-100"
+                            }`}
+                        >
+                          {s.icon}
+                        </div>
+
+                        {/* Hover Image */}
+                        <img
+                          src={s.hoverImg}
+                          alt={s.id}
+                          className={`absolute inset-0 m-auto w-8 h-8 object-contain transition-opacity duration-300 ${hovered === s.id ? "opacity-100" : "opacity-0"
+                            }`}
+                        />
                       </a>
                     ))}
                   </div>
@@ -142,7 +184,7 @@ const Contact = () => {
                       <h4 className="font-semibold mb-1">Download Resume</h4>
                       <p className="text-muted-foreground text-sm">Get my complete professional profile</p>
                     </div>
-                    <Button className="bg-primary hover:bg-primary/90 text-primary-foreground glow-effect">
+                    <Button onClick={handleResumeDownload} className="bg-primary hover:bg-primary/90 text-primary-foreground glow-effect">
                       <Download size={16} className="mr-2" />
                       Resume
                     </Button>
@@ -152,10 +194,10 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="animate-slide-up" style={{animationDelay: '0.2s'}}>
+            <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <Card className="p-8 card-gradient border-border">
                 <h3 className="text-2xl font-semibold mb-6">Send Message</h3>
-                
+
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
@@ -212,8 +254,8 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button 
-                    type="submit" 
+                  <Button
+                    type="submit"
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground glow-effect"
                     size="lg"
                   >
@@ -231,19 +273,6 @@ const Contact = () => {
               </Card>
             </div>
           </div>
-
-          {/* Availability Status */}
-          {/* <div className="mt-12 text-center animate-fade-in">
-            <Card className="p-6 card-gradient border-border inline-block">
-              <div className="flex items-center gap-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                <div>
-                  <p className="font-medium">Available for Freelance Projects</p>
-                  <p className="text-muted-foreground text-sm">Open to new opportunities and collaborations</p>
-                </div>
-              </div>
-            </Card>
-          </div> */}
         </div>
       </div>
     </section>

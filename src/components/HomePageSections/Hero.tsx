@@ -1,6 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Download, Code, Sparkles } from "lucide-react";
+import { Mail, Download, Code, Sparkles } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaLinkedinIn, FaInstagram } from "react-icons/fa6";
+import { BsGithub } from "react-icons/bs";
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
@@ -45,6 +48,54 @@ const Hero = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+
+  const handleResumeDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Uttam.pdf"; // Place your resume inside /public folder
+    link.download = "Uttam_Singhal_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+
+  const socials = [
+    {
+      id: "github",
+      href: "https://github.com/Uttamg61001",
+      icon: <BsGithub size={32} />,
+      hoverImg: "github.png", // 👈 your hover image path
+    },
+
+    {
+      id: "linkedin",
+      href: "https://www.linkedin.com/in/uttam-singhal-489130244/",
+      icon: <FaLinkedinIn size={32} />,
+      hoverImg: "linkedin.png",
+    },
+    {
+      id: "mail",
+      href: "mailto:uttamg61001@gmail.com",
+      icon: <Mail size={32} />,
+      hoverImg: "mail.png",
+    },
+    {
+      id: "whatspp",
+      href: "https://wa.me/+917062467187",
+      icon: <FaWhatsapp size={32} />,
+      hoverImg: "whatsapp.png",
+    },
+    {
+      id: "instagram",
+      href: "https://www.instagram.com/uttamg61001/",
+      icon: <FaInstagram size={32} />,
+      hoverImg: "instagram.png",
+    },
+  ];
+
+  const [hovered, setHovered] = useState<string | null>(null);
+
 
   return (
     <section
@@ -93,7 +144,7 @@ const Hero = () => {
             className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl sm:max-w-3xl mx-auto mb-6 md:mb-12 leading-relaxed animate-slide-up px-3 sm:px-0"
             style={{ animationDelay: "0.4s" }}
           >
-            Hi! I’m Uttam Singhal. With 2.9 years of experience in UI/UX and frontend, 
+            Hi! I’m Uttam Singhal. With 2.9 years of experience in UI/UX and frontend,
             I specialize in designing user-centered interfaces using Figma, Adobe XD, and modern web technologies.
           </p>
 
@@ -109,10 +160,11 @@ const Hero = () => {
             >
               View My Work
             </Button>
+            {/* 📄 Updated Download Resume Button */}
             <Button
               size="lg"
               variant="outline"
-              onClick={() => scrollToSection("#contact")}
+              onClick={handleResumeDownload}
               className="w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 text-base"
             >
               <Download className="mr-2" size={20} />
@@ -125,35 +177,44 @@ const Hero = () => {
             className="flex justify-center gap-4 sm:gap-6 animate-slide-up flex-wrap"
             style={{ animationDelay: "0.8s" }}
           >
-            <a
-              href="https://github.com/Uttamg61001"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 sm:p-4 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:glow-effect"
-            >
-              <Github size={22} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/uttam-singhal-489130244/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 sm:p-4 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:glow-effect"
-            >
-              <Linkedin size={22} />
-            </a>
-            <a
-              href="mailto:uttamg61001@gmail.com"
-              className="p-3 sm:p-4 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:glow-effect"
-            >
-              <Mail size={22} />
-            </a>
+            {socials.map((s) => (
+              <a
+                key={s.id}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={() => setHovered(s.id)}
+                onMouseLeave={() => setHovered(null)}
+                className="relative p-3 sm:p-4 rounded-full bg-muted transition-all duration-300 hover:scale-110 hover:glow-effect flex items-center justify-center overflow-hidden"
+              >
+                {/* Default Icon */}
+                <div
+                  className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${hovered === s.id ? "opacity-0" : "opacity-100"
+                    }`}
+                >
+                  {s.icon}
+                </div>
+
+                {/* Hover Image */}
+                <img
+                  src={s.hoverImg}
+                  alt={s.id}
+                  className={`absolute inset-0 m-auto w-8 h-8 object-contain transition-opacity duration-300 ${hovered === s.id ? "opacity-100" : "opacity-0"
+                    }`}
+                />
+              </a>
+            ))}
           </div>
+
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block">
-        <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
+      {/* 🖱️ Updated Scroll Indicator with Click */}
+      <div
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block cursor-pointer"
+        onClick={() => scrollToSection("#experience")}
+      >
+        <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center items-start overflow-hidden">
           <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse" />
         </div>
       </div>

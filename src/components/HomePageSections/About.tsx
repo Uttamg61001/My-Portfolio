@@ -4,17 +4,17 @@ import { User, MapPin, Phone, Mail, Calendar } from "lucide-react";
 
 const About = () => {
   const personalInfo = [
-    { icon: MapPin, label: "Location", value: "Yamunanagar, Haryana" },
-    { icon: Phone, label: "Phone", value: "+91 8307225020" },
-    { icon: Mail, label: "Email", value: "vikaspandey8635@gmail.com" },
-    { icon: Calendar, label: "Experience", value: "2+ Years" },
+    { icon: MapPin, label: "Location", value: "Sri Ganganagar, Rajasthan" },
+    { icon: Phone, label: "Phone", value: "+91 7062467187" },
+    { icon: Mail, label: "Email", value: "uttamg61001@gmail.com" },
+    { icon: Calendar, label: "Experience", value: "2.9+ Years" },
   ];
 
   const highlights = [
-    "Improved web app performance by 20-30%",
-    "Integrated real-time chat with Socket.io",
-    "Firebase notifications specialist",
-    "Full-stack project management",
+    "Designed clean, user-friendly interfaces that improved overall usability.",
+    "Turned complex ideas into simple, intuitive design solutions.",
+    "Collaborated with developers to bring creative concepts to life.",
+    "Completed certifications in React-JS, Adobe XD, and UI/UX Design to sharpen my skills.",
   ];
 
   return (
@@ -31,23 +31,23 @@ const About = () => {
               my passion for development.
             </p>
           </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Personal Info */}
-            <div className="animate-slide-up">
-              <div className="mb-8">
-                <div className="flex items-center gap-3 mb-6">
+<div className="flex items-center gap-3 mb-6">
                   <User className="text-primary" size={24} />
                   <h3 className="text-2xl font-semibold">
                     Personal Information
                   </h3>
                 </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Personal Info */}
+            <div className="animate-slide-up">
+              <div className="mb-8">
+                
 
                 <div className="space-y-4">
                   {personalInfo.map((item, index) => (
                     <div
                       key={index}
-                      className="flex items-center gap-4 p-4 rounded-lg bg-card border border-border hover:border-primary/50 transition-all duration-300"
+                      className="flex items-center gap-4 p-4 md:p-6 rounded-lg bg-card border border-border hover:border-primary/50 transition-all duration-300"
                     >
                       <item.icon
                         className="text-primary flex-shrink-0"
@@ -65,8 +65,8 @@ const About = () => {
               </div>
 
               {/* Education */}
-              <Card className="p-6 card-gradient border-border">
-                <h4 className="font-semibold text-lg mb-4 text-primary">
+              <Card className="p-4 md:p-6 card-gradient border-border">
+                <h4 className="font-semibold text-lg  text-primary">
                   Education
                 </h4>
                 <div>
@@ -74,10 +74,10 @@ const About = () => {
                     B.Tech in Computer Science and Engineering
                   </h5>
                   <p className="text-muted-foreground">
-                    Kurukshetra University, Haryana
+                    Surendera Group of Institute, Sri Ganganagar
                   </p>
                   <p className="text-muted-foreground text-sm">
-                    July 2018 – June 2022
+                    July 2020 – July 2025
                   </p>
                 </div>
               </Card>
@@ -89,8 +89,8 @@ const About = () => {
               style={{ animationDelay: "0.2s" }}
             >
               <div className="space-y-6">
-                <Card className="p-4 card-gradient border-border">
-                  <h3 className="text-xl font-semibold mb-6 flex items-center gap-3">
+                <Card className="p-4 md:p-6  card-gradient border-border">
+                  <h3 className="text-xl font-semibold mb-2 flex items-center gap-3">
                     <span className="w-2 h-8 bg-gradient-to-b from-primary to-accent rounded-full" />
                     Professional Summary
                   </h3>
@@ -121,23 +121,6 @@ const About = () => {
                     </div>
                   </div>
                 </Card>
-
-                {/* Current Status */}
-                {/* <Card className="p-6 card-gradient border-border text-center">
-                  <h4 className="font-semibold text-lg mb-2">Current Status</h4>
-                  <div className="flex justify-center w-full">
-                    <Badge
-                      variant="secondary"
-                      className="bg-primary/10 text-primary border-primary/20 px-4 py-2 rounded-full"
-                    >
-                      Open for New Opportunities
-                    </Badge>
-                  </div>
-                  <p className="text-muted-foreground text-sm mt-2">
-                    Ready to contribute to innovative projects and grow with
-                    dynamic teams
-                  </p>
-                </Card> */}
               </div>
             </div>
           </div>

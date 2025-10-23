@@ -25,68 +25,22 @@ const Skills = () => {
     return () => observer.disconnect();
   }, []);
 
-  const skillCategories = [
-    {
-      icon: Code,
-      title: "Frontend Development",
-      color: "from-blue-500 to-cyan-500",
-      skills: [
-        { name: "HTML/CSS", level: 95 },
-        { name: "JavaScript", level: 90 },
-        { name: "TypeScript", level: 85 },
-        { name: "React.js", level: 92 },
-        { name: "Next.js", level: 88 },
-      ],
-    },
-    {
-      icon: Wrench,
-      title: "Tools & Frameworks",
-      color: "from-purple-500 to-pink-500",
-      skills: [
-        { name: "Redux/Redux Toolkit", level: 85 },
-        { name: "Tailwind CSS", level: 92 },
-        { name: "SCSS/Styled Components", level: 88 },
-        { name: "Shadcn/UI", level: 90 },
-        { name: "Bootstrap", level: 85 },
-      ],
-    },
-    {
-      icon: Globe,
-      title: "Web Technologies",
-      color: "from-green-500 to-emerald-500",
-      skills: [
-        { name: "Socket.io", level: 80 },
-        { name: "RESTful APIs", level: 85 },
-        { name: "Firebase", level: 82 },
-        { name: "Chrome Extensions", level: 75 },
-        { name: "PWA Development", level: 78 },
-      ],
-    },
-    {
-      icon: Database,
-      title: "Development Tools",
-      color: "from-orange-500 to-red-500",
-      skills: [
-        { name: "VS Code", level: 95 },
-        { name: "Git/GitHub", level: 88 },
-        { name: "GitLab", level: 85 },
-        { name: "Vite", level: 90 },
-        { name: "Webpack", level: 75 },
-      ],
-    },
-  ];
-
   const additionalSkills = [
-    "Responsive Design",
-    "Cross-browser Compatibility",
-    "Performance Optimization",
-    "SEO Best Practices",
-    "Agile Development",
-    "Code Review",
-    "Team Collaboration",
-    "Problem Solving",
-    "UI/UX Design",
-    "Testing & Debugging",
+    "User Research",
+    "Wireframing & Prototyping",
+    "Design Systems",
+    "Interaction Design",
+    "Visual Design",
+    "Usability Testing",
+    "Accessibility (WCAG)",
+    "Information Architecture",
+    "Micro-interactions",
+    "Design Thinking",
+    "Responsive UI Design",
+    "Motion Design",
+    "UX Writing",
+    "A/B Testing",
+    "Collaboration with Developers"
   ];
 
   return (
@@ -104,8 +58,6 @@ const Skills = () => {
             </p>
           </div>
 
-
-
           {/* Additional Skills */}
           <div className="animate-fade-in">
             <Card className="p-8 card-gradient border-border">
@@ -117,8 +69,7 @@ const Skills = () => {
                   </h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Beyond technical skills, I bring strong soft skills and modern
-                  development practices
+                  Beyond visual creativity, I bring user-centered design thinking and modern software design practices.
                 </p>
               </div>
 

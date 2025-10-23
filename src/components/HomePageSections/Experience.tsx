@@ -16,16 +16,27 @@ const Experience = () => {
         "Designed unified dashboards in Figma to bring Trello, Xero, HubSpot, and Net360 together in one platform.",
         "Created user flows and prototypes for managing projects, finances, and CRM data seamlessly.",
         "Designed and developed responsive dashboards for Cyber Security analytics, improving data visualization and user experience.",
-        "IDeveloped a clean and structured UI for an Asset Management System, ensuring seamless inventory tracking.",
-
+        "Developed a clean and structured UI for an Asset Management System, ensuring seamless inventory tracking."
       ],
-      technologies: [
-        "JS.png",
-        "figma.png",
-        "photoshop.png",
-        "html.png",
-        "mui.png",
-        "tailwind.png",
+      Technologies: [
+        "Figma",
+        "Adobe XD",
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Framer",
+        "MUI",
+        "Tailwind CSS",
+        "HTML5",
+        "JavaScript",
+        "Notion",
+        "Miro",
+        "ChatGPT",
+        "Midjourney",
+        "RunwayML",
+        "Uizard",
+        "UXPilot",
+        "Durable",
+        "Gamma"
       ],
     },
     {
@@ -36,53 +47,88 @@ const Experience = () => {
       type: "Full-time",
       responsibilities: [
         "Proficient in translating complex requirements into elegant, user-friendly designs, ensuring consistency across web and mobile platforms.",
-        "Designed and implemented a Doctor Portal for session booking, enhancing user experience and streamlining workflows for healthcare professionals.",
+        "Designed and implemented a Doctor Portal for session booking, enhancing user experience and streamlining workflows for healthcare professionals."
       ],
-      technologies: [
-         "JS.png",
-        "figma.png",
-        "photoshop.png",
-        "html.png",
-        "mui.png",
-        "tailwind.png",
+      Technologies: [
+        "Figma",
+        "Adobe XD",
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Framer",
+        "MUI",
+        "Tailwind CSS",
+        "HTML5",
+        "JavaScript",
+        "Notion",
+        "Miro",
+        "ChatGPT",
+        "Midjourney",
+        "RunwayML",
+        "Uizard",
+        "Gamma",
+        "Durable"
       ],
     },
     {
       title: "UI/UX Designer",
       company: "Urban-Chat",
-      location: "Work Frome Home",
+      location: "Work From Home",
       duration: "August 2023 - May 2024",
       type: "Full-time",
       responsibilities: [
         "Designed an advanced AI chat and support interface, seamlessly integrating it into web and mobile platforms like Slack and WhatsApp for enhanced user experience.",
-        "Worked closely with the development team to turn design ideas into a fully functional and responsive website.",
+        "Worked closely with the development team to turn design ideas into a fully functional and responsive website."
       ],
-      technologies: [
-         "JS.png",
-        "figma.png",
-        "photoshop.png",
-        "html.png",
-        "mui.png",
-        "tailwind.png",
+      Technologies: [
+        "Figma",
+        "Adobe XD",
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Framer",
+        "MUI",
+        "Tailwind CSS",
+        "HTML5",
+        "JavaScript",
+        "Notion",
+        "Miro",
+        "ChatGPT",
+        "Midjourney",
+        "RunwayML",
+        "Uizard",
+        "Gamma",
+        "Canva",
+        "Copy.ai"
       ],
     },
-     {
+    {
       title: "UI/UX Designer",
       company: "Apna Konnect",
-      location: "Work Frome Home",
+      location: "Work From Home",
       duration: "Jan 2023 - July 2023",
       type: "Full-time",
       responsibilities: [
         "Lead the development of UI/UX design for mobile applications and websites, creating user experience and visual impact.",
-        "Directed high-quality video content for the company’s YouTube channel. Conducted user research, usability testing, and stayed updated on industry trends for innovative design solutions.",
+        "Directed high-quality video content for the company’s YouTube channel. Conducted user research, usability testing, and stayed updated on industry trends for innovative design solutions."
       ],
-      technologies: [
-         "JS.png",
-        "figma.png",
-        "photoshop.png",
-        "html.png",
-        "mui.png",
-        "tailwind.png",
+      Technologies: [
+        "Figma",
+        "Adobe XD",
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Framer",
+        "MUI",
+        "Tailwind CSS",
+        "HTML5",
+        "JavaScript",
+        "Notion",
+        "Miro",
+        "ChatGPT",
+        "Midjourney",
+        "RunwayML",
+        "Uizard",
+        "Canva",
+        "D-ID",
+        "Gamma"
       ],
     },
   ];
@@ -96,7 +142,7 @@ const Experience = () => {
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               Work <span className="text-gradient">Experience</span>
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto"> 
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               My professional journey in front-end development, building
               scalable web applications and enhancing user experiences.
             </p>
@@ -110,7 +156,7 @@ const Experience = () => {
                 className="animate-slide-up"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <Card className="project-card p-8 relative">
+                <Card className="project-card p-4 lg:p-6 relative">
                   {/* Timeline Line */}
                   {index < experiences.length - 1 && (
                     <div className="absolute left-4 top-full w-0.5 h-8 bg-gradient-to-b from-primary to-transparent" />
@@ -119,7 +165,7 @@ const Experience = () => {
                   {/* Timeline Dot */}
                   <div className="absolute -left-2 top-8 w-4 h-4 bg-primary rounded-full border-4 border-background" />
 
-                  <div className="ml-8">
+                  <div className="ml-2 lg:ml-4">
                     {/* Header */}
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                       <div>
@@ -177,7 +223,7 @@ const Experience = () => {
                         Technologies & Tools
                       </h4>
                       <div className="flex flex-wrap gap-2">
-                        {exp.technologies.map((tech, idx) => (
+                        {exp.Technologies.map((tech, idx) => (
                           <Badge
                             key={idx}
                             variant="outline"
@@ -209,8 +255,8 @@ const Experience = () => {
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
                 <div className="relative flex flex-1 flex-col justify-between gap-3 text-center">
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-primary mb-1">2+</h3>
-                    <h2 className="font-sans text-sm md:text-base text-muted-foreground">
+                    <h3 className="text-2xl font-bold text-primary mb-1">2.9+</h3>
+                    <h2 className="font-sans text-sm md:text-base text-white">
                       Years Experience
                     </h2>
                   </div>
@@ -230,8 +276,8 @@ const Experience = () => {
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
                 <div className="relative flex flex-1 flex-col justify-between gap-3 text-center">
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-primary mb-1">10+</h3>
-                    <h2 className="font-sans text-sm md:text-base text-muted-foreground">
+                    <h3 className="text-2xl font-bold text-primary mb-1">30+</h3>
+                    <h2 className="font-sans text-sm md:text-base text-white">
                       Projects Completed
                     </h2>
                   </div>
@@ -252,7 +298,7 @@ const Experience = () => {
                 <div className="relative flex flex-1 flex-col justify-between gap-3 text-center">
                   <div className="space-y-3">
                     <h3 className="text-2xl font-bold text-primary mb-1">30%</h3>
-                    <h2 className="font-sans text-sm md:text-base text-muted-foreground">
+                    <h2 className="font-sans text-sm md:text-base text-white">
                       Performance Improvement
                     </h2>
                   </div>

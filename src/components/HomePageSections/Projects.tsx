@@ -7,101 +7,158 @@ import { Lens } from "../ui/lens";
 import { cn } from "@/lib/utils";
 
 export default function Projects() {
-  const projects = [
+  const projectsData = [
     {
-      title: "Rank Door - Digital Marketing Agency Website",
+      title: "Chain Optimization",
       description:
-        "A conversion-focused digital marketing agency website built for a Brisbane-based agency specializing in SEO, Google Ads, local business optimization, and web development services with personalized client approach.",
-      category: "thumbnail 1.jpg",
+        "A conversion-focused logistics optimization dashboard built to simplify supply chain analytics and operational efficiency with clear data visualization and minimal UI.",
+      image: "thumbnail 2.jpg",
+      link: "https://www.figma.com/design/xnT7HY0TOAwTUYt2ydrlVM/Assignment?node-id=1-3&t=gaxPpIoWYsq36WBZ-1",
       technologies: [
-        "JS.png",
+        "Figma",
+        "Next.js",
         "TypeScript",
         "Tailwind CSS",
-        "SEO Optimization",
+        "Chart.js",
         "Responsive Design",
       ],
     },
     {
-      title: "FutureSafeGroup - Binary MLM Platform",
+      title: "Chat-Bot",
       description:
-        "A sophisticated binary-tree-based MLM platform with automatic salary and reward systems, featuring secure payment processing and performance-based incentives.",
-      category: "thumbnail 2.jpg",
+        "An AI-powered chatbot interface designed for seamless communication, featuring conversational UI patterns, user-friendly flow, and responsive layouts.",
+      image: "thumbnail 3.jpg",
+      link: "https://www.figma.com/design/nKRPi5J27RAgYDxHYONOBR/Urban-Chat?node-id=0-6373&t=KgdKQNnAKZIB1hnn-1",
       technologies: [
+        "Figma",
+        "Adobe XD",
         "Next.js",
-        "TypeScript",
         "Tailwind CSS",
-        "Node.js",
-        "Payment APIs",
-      ],
-    },
-    {
-      title: "EquipSee - Dynamic Dashboard Platform",
-      description:
-        "A comprehensive equipment management platform with dynamic modules, pin-based dashboards, and location-based alert systems for organizations.",
-      category: "thumbnail 3.jpg",
-      technologies: ["Next.js", "Tailwind CSS", "Shadcn/UI", "TypeScript"],
-    },
-    {
-      title: "Jane Bond BBQ",
-      description:
-        "A modern restaurant website offering online menu browsing and delivery options. Built with responsive design and smooth user experience.",
-      category: "thumbnail 4.jpg",
-      technologies: ["Next.js", "Tailwind CSS", "HTML", "SASS"],
-    },
-    {
-      title: "Business Financial Group (BFG)",
-      description:
-        "A comprehensive full-service accounting firm platform providing tax services with advanced data management and interactive features.",
-      category: "thumbnail 5.jpg",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "Redux Toolkit",
-        "Tailwind CSS",
-        "AG-Grid",
-        "React-Quill",
-      ],
-    },
-    {
-      title: "Nainer Platform",
-      description:
-        "Modern web application with real-time features and IoT integrations, focusing on user experience and performance optimization.",
-      category: "thumbnail 6.jpg",
-      technologies: [
-        "React.js",
-        "Socket.io",
-        "Firebase",
         "Shadcn/UI",
+        "AI Integration",
+      ],
+    },
+    {
+      title: "Technologies",
+      description:
+        "A modern agency landing page highlighting services, projects, and brand identity with both dark and light themes for improved accessibility.",
+      image: "thumbnail 1.jpg",
+      link: "https://www.figma.com/design/D2opEHQGXDDlljrYnoScnF/RR-Technologies-%7C-Dark-and-light-UI-%7C-Agency-landing-page-free-(Community)?node-id=0-1&t=I3n5anFQ4aClHk5w-1",
+      technologies: [
+        "Figma",
+        "Framer",
+        "React.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+      ],
+    },
+    {
+      title: "Cleaning Services",
+      description:
+        "A fresh and responsive landing page design for cleaning service providers, emphasizing clarity, conversion, and a professional look.",
+      image: "thumbnail 4.jpg",
+      link: "https://www.figma.com/design/FPCZiEd5udisHfhnFtT6Km/Cleaning-services-website-landing-page-(Community)?node-id=2-2&t=bzWQsQTbeSEfCQPa-1",
+      technologies: [
+        "Figma",
+        "Illustrator",
+        "Next.js",
+        "Tailwind CSS",
+        "HTML",
+        "Animation",
+      ],
+    },
+    {
+      title: "Powered by AI",
+      description:
+        "An experimental AI dashboard interface focused on visual storytelling, automation insights, and futuristic UI components.",
+      image: "thumbnail 9.jpg",
+      link: "https://www.figma.com/design/Necv44SJ9Qik7q8G5Zhoj6/Untitled?node-id=1-675&t=obfovtNgBErxrJy3-1",
+      technologies: [
+        "Figma",
+        "Framer",
+        "React.js",
+        "Tailwind CSS",
+        "AI Models",
+        "APIs",
+      ],
+    },
+    {
+      title: "Mandiram",
+      description:
+        "A devotional mobile app concept allowing users to explore temples, rituals, and spiritual content with calm, spiritual-focused UI design.",
+      image: "thumbnail 6.jpg",
+      link: "https://www.figma.com/design/YHBLH5RLOWQl9sIBruuwjp/Mandiram?node-id=1-18965&t=IhQ3og2ASTls2nc2-1",
+      technologies: [
+        "Figma",
+        "LottieFiles",
+        "React Native",
+        "Firebase",
+        "Tailwind CSS",
+        "TypeScript",
+      ],
+    },
+    {
+      title: "Guru-ji Finder",
+      description:
+        "An app to connect users with nearby spiritual mentors and event organizers, with a location-based search and calm, devotional UI theme.",
+      image: "thumbnail 8.jpg",
+      link: "https://www.figma.com/design/WWPXgz04Gtl5CDst76hSx5/Guru-ji-Finder-UI?node-id=1-13500&t=T7jsdMG5agNpyyS8-1",
+      technologies: [
+        "Figma",
+        "Adobe XD",
+        "React Native",
+        "Google Maps API",
         "Tailwind CSS",
       ],
     },
     {
-      title: "EMS Energy Management",
+      title: "Cineview",
       description:
-        "IoT-powered energy management system providing real-time monitoring, analytics, and control over energy consumption.",
-      category: "thumbnail 7.jpg",
+        "A movie discovery platform that combines cinematic visuals with easy navigation and an elegant, entertainment-focused UI experience.",
+      image: "thumbnail 5.jpg",
+      link: "https://www.figma.com/design/8tm46QNNHoyzXBT4mdgRev/Cineview?node-id=0-1&t=71zi2TfrGNX0Y7k2-1",
       technologies: [
-        "React.js",
-        "TypeScript",
-        "Socket.io",
-        "Chart.js",
+        "Figma",
+        "Framer",
+        "Next.js",
         "Tailwind CSS",
+        "Redux",
+        "API Integration",
       ],
     },
     {
-      title: "EMS Energy Management",
+      title: "Routine",
       description:
-        "IoT-powered energy management system providing real-time monitoring, analytics, and control over energy consumption.",
-      category: "thumbnail 8.jpg",
+        "A habit-tracking mobile app that blends simple UI design with data-driven insights to help users maintain productivity effortlessly.",
+      image: "thumbnail 7.jpg",
+      link: "https://www.figma.com/design/pvqzFdqZzP9yji2rpGyL3N/Routiner---Habit-Tracker-App?node-id=0-1&t=PidWcLQhqeMeozLu-1",
       technologies: [
-        "React.js",
+        "Figma",
+        "Framer",
+        "React Native",
+        "Expo",
         "TypeScript",
-        "Socket.io",
         "Chart.js",
-        "Tailwind CSS",
+      ],
+    },
+    {
+      title: "Katalyst Studio - Indonesia-Based Digital Agency",
+      description:
+        "A sleek and modern digital agency landing page designed to showcase creative services, design process, and successful projects.",
+      image: "thumbnail 10.jpg",
+      link: "https://www.figma.com/design/WnietlVpcslaHh3fuH6pIl/Landing-Page?node-id=0-1&t=TMF6JPqkeC8MjKJz-1",
+      technologies: [
+        "Figma",
+        "Illustrator",
+        "Framer",
+        "LottieFiles",
+        "Framer Motion"
       ],
     },
   ];
+
+  const [projects] = useState(projectsData);
 
   return (
     <section id="projects" className="py-10 md:py-20 bg-secondary/20">
@@ -137,13 +194,22 @@ export default function Projects() {
 }
 
 /* ---------------------------------------------------
-   Individual Project Card Component
+   Individual Project Card Component (Clickable)
 --------------------------------------------------- */
 function ProjectCard({ project }: any) {
   const [hovering, setHovering] = useState(false);
 
+  const handleClick = () => {
+    if (project.link) {
+      window.open(project.link, "_blank");
+    }
+  };
+
   return (
-    <Card className="relative overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-[#1D2235] to-[#121318]">
+    <Card
+      onClick={handleClick}
+      className="relative overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-[#1D2235] to-[#121318] cursor-pointer transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg"
+    >
       <Rays />
       <Beams />
       <div className="relative z-10 p-4 md:p-6">
@@ -151,7 +217,7 @@ function ProjectCard({ project }: any) {
         <div className="mb-6">
           <Lens hovering={hovering} setHovering={setHovering}>
             <img
-              src={project.category}
+              src={project.image}
               alt={project.title}
               className="w-full h-full object-cover rounded-2xl"
             />
@@ -211,7 +277,6 @@ const Beams = () => (
     height="315"
     viewBox="0 0 380 315"
     fill="none"
-    // xmlns="http://www.w3.org/2000/svg"
     className="absolute top-0 left-1/2 -translate-x-1/2 w-full pointer-events-none"
   >
     <g filter="url(#filter0_f)">
@@ -243,7 +308,6 @@ const Rays = ({ className }: { className?: string }) => (
     height="397"
     viewBox="0 0 380 397"
     fill="none"
-    // xmlns="http://www.w3.org/2000/svg"
     className={cn("absolute left-0 top-0 pointer-events-none z-[1]", className)}
   >
     <g filter="url(#filter3_f)">

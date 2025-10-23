@@ -8,8 +8,10 @@ import {
   Mail,
   Phone,
   MapPin,
+  Instagram,
 } from "lucide-react";
 import Link from "next/link";
+import { FaLinkedinIn, FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -27,6 +29,7 @@ const Footer = () => {
     { name: "GitHub", icon: Github, href: "https://github.com" },
     { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com" },
     { name: "Email", icon: Mail, href: "mailto:uttamg61001@gmail.com" },
+    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/uttamg61001/" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -52,7 +55,7 @@ const Footer = () => {
                 Uttam Singhal
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6 max-w-md">
-                Passionate front-end developer creating beautiful, responsive
+                Passionate ui/ux designer creating beautiful, responsive
                 web applications with modern technologies. Always eager to learn
                 and take on new challenges.
               </p>
@@ -136,14 +139,14 @@ const Footer = () => {
 
           {/* Bottom Footer */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
-            <div className="flex flex-wrap justify-center sm:justify-start items-center gap-2 text-sm text-muted-foreground">
+            <div className="flex flex-wrap justify-center sm:justify-start items-center gap-2 text-sm text-white">
               <span>© {currentYear} Uttam Singhal. Made with</span>
               <Heart size={14} className="text-red-500 animate-pulse" />
               <span>using React & TypeScript</span>
             </div>
 
             <div className="flex items-center gap-4">
-              <span className="text-xs text-muted-foreground">
+              <span className="text-xs text-white">
                 Last updated: {currentMonth} {currentYear}
               </span>
 
