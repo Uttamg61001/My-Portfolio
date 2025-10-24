@@ -196,6 +196,7 @@ const Hero = () => {
                 </div>
 
                 {/* Hover Image */}
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={s.hoverImg}
                   alt={s.id}

@@ -229,6 +229,7 @@ const Experience = () => {
                             variant="outline"
                             className="border-primary/20 text-primary hover:scale-120  hover:text-primary-foreground transition-colors cursor-default"
                           >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img className="w-10 h-10" src={tech} alt="" />
                           </Badge>
                         ))}

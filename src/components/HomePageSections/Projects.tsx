@@ -196,6 +196,7 @@ export default function Projects() {
 /* ---------------------------------------------------
    Individual Project Card Component (Clickable)
 --------------------------------------------------- */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function ProjectCard({ project }: any) {
   const [hovering, setHovering] = useState(false);
 
@@ -216,6 +217,7 @@ function ProjectCard({ project }: any) {
         {/* Lens + Image */}
         <div className="mb-6">
           <Lens hovering={hovering} setHovering={setHovering}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={project.image}
               alt={project.title}
@@ -243,21 +245,26 @@ function ProjectCard({ project }: any) {
               Technologies Used
             </h4>
             <div className="flex flex-wrap gap-2">
-              {project.technologies.map((tech: any, idx: number) => (
+              {project.technologies.map((tech: string, idx: number) => (
                 <Badge
                   key={idx}
                   variant="outline"
                   className="border-primary/20 text-primary text-xs px-2 py-1"
                 >
+
                   {tech.endsWith(".png") || tech.endsWith(".jpg") ? (
-                    <img
-                      src={tech}
-                      alt={tech}
-                      className="w-6 h-6 object-contain"
-                    />
+                    <>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={tech}
+                        alt={tech}
+                        className="w-6 h-6 object-contain"
+                      />
+                    </>
                   ) : (
                     tech
                   )}
+
                 </Badge>
               ))}
             </div>

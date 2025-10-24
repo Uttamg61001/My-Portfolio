@@ -1,5 +1,4 @@
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { User, MapPin, Phone, Mail, Calendar } from "lucide-react";
 
 const About = () => {
@@ -14,7 +13,7 @@ const About = () => {
     "Designed clean, user-friendly interfaces that improved overall usability.",
     "Turned complex ideas into simple, intuitive design solutions.",
     "Collaborated with developers to bring creative concepts to life.",
-    "Completed certifications in React-JS, Adobe XD, and UI/UX Design to sharpen my skills.",
+    "Completed certifications in React-JS, Adobe XD, and UI/UX  ̰Design to sharpen my skills.",
   ];
 
   return (
@@ -31,17 +30,17 @@ const About = () => {
               my passion for development.
             </p>
           </div>
-<div className="flex items-center gap-3 mb-6">
-                  <User className="text-primary" size={24} />
-                  <h3 className="text-2xl font-semibold">
-                    Personal Information
-                  </h3>
-                </div>
+          <div className="flex items-center gap-3 mb-6">
+            <User className="text-primary" size={24} />
+            <h3 className="text-2xl font-semibold">
+              Personal Information
+            </h3>
+          </div>
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Personal Info */}
             <div className="animate-slide-up">
               <div className="mb-8">
-                
+
 
                 <div className="space-y-4">
                   {personalInfo.map((item, index) => (
@@ -96,11 +95,11 @@ const About = () => {
                   </h3>
 
                   <p className="text-muted-foreground leading-relaxed mb-6">
-                   Experienced UI/UX Designer specializing in creating intuitive,
-                   user-centered designs for web and mobile platforms. Skilled
-                   in wireframing, prototyping, and responsive design, delivering
-                   functional and visually appealing interfaces. Adept at aligning
-                   user needs with business goals to enhance digital experiences.
+                    Experienced UI/UX Designer specializing in creating intuitive,
+                    user-centered designs for web and mobile platforms. Skilled
+                    in wireframing, prototyping, and responsive design, delivering
+                    functional and visually appealing interfaces. Adept at aligning
+                    user needs with business goals to enhance digital experiences.
                   </p>
 
                   {/* Key Highlights */}

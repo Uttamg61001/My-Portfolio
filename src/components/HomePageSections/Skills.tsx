@@ -1,17 +1,17 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { useState, useEffect } from "react";
-import { Code, Wrench, Globe, Database, Smartphone, Zap } from "lucide-react";
+import {  useEffect } from "react";
+import { Code, Globe, Smartphone, Zap } from "lucide-react";
 import { GlowingEffect } from "../ui/glowing-effect";
 
 const Skills = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  // const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
+          // setIsVisible(true);
         }
       },
       { threshold: 0.3 }

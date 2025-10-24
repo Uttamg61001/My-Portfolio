@@ -82,6 +82,7 @@ const Contact = () => {
       } else {
         alert(`❌ Failed: ${res.data.error || 'Please try again.'}`);
       }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       console.error("Email Error:", error.response?.data || error.message);
       alert(`Something went wrong! ${error.response?.data?.error || ''}`);
@@ -166,6 +167,7 @@ const Contact = () => {
                         </div>
 
                         {/* Hover Image */}
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={s.hoverImg}
                           alt={s.id}

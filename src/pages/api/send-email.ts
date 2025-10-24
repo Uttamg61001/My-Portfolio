@@ -46,6 +46,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     console.log("✅ Email sent successfully");
     return res.status(200).json({ success: true, message: "Email sent successfully!" });
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     console.error("❌ Error sending email:", error);
     return res.status(500).json({
