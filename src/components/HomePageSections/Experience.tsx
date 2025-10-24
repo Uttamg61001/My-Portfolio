@@ -19,24 +19,21 @@ const Experience = () => {
         "Developed a clean and structured UI for an Asset Management System, ensuring seamless inventory tracking."
       ],
       Technologies: [
-        "Figma",
-        "Adobe XD",
-        "Adobe Photoshop",
-        "Adobe Illustrator",
-        "Framer",
-        "MUI",
-        "Tailwind CSS",
-        "HTML5",
-        "JavaScript",
-        "Notion",
-        "Miro",
-        "ChatGPT",
-        "Midjourney",
-        "RunwayML",
-        "Uizard",
-        "UXPilot",
-        "Durable",
-        "Gamma"
+        "figma.png",
+        "xd.png",
+        "photoshop.png",
+        "illustrater.png",
+        "framer.png",
+        "mui.png",
+        "tailwind.png",
+        "html.png",
+        "JS.png",
+        "notion.png",
+        "miro.png",
+        "chatgpt.png",
+        "Uizard.jpeg",
+        "canva.png",
+        "lottifie.png",
       ],
     },
     {
@@ -50,23 +47,16 @@ const Experience = () => {
         "Designed and implemented a Doctor Portal for session booking, enhancing user experience and streamlining workflows for healthcare professionals."
       ],
       Technologies: [
-        "Figma",
-        "Adobe XD",
-        "Adobe Photoshop",
-        "Adobe Illustrator",
-        "Framer",
-        "MUI",
-        "Tailwind CSS",
-        "HTML5",
-        "JavaScript",
-        "Notion",
-        "Miro",
-        "ChatGPT",
-        "Midjourney",
-        "RunwayML",
-        "Uizard",
-        "Gamma",
-        "Durable"
+        "figma.png",
+        "photoshop.png",
+        "framer.png",
+        "tailwind.png",
+        "html.png",
+        "notion.png",
+        "miro.png",
+        "chatgpt.png",
+        "Uizard.jpeg",
+        "coreldraw.png",
       ],
     },
     {
@@ -80,24 +70,15 @@ const Experience = () => {
         "Worked closely with the development team to turn design ideas into a fully functional and responsive website."
       ],
       Technologies: [
-        "Figma",
-        "Adobe XD",
-        "Adobe Photoshop",
-        "Adobe Illustrator",
-        "Framer",
-        "MUI",
-        "Tailwind CSS",
-        "HTML5",
-        "JavaScript",
-        "Notion",
-        "Miro",
-        "ChatGPT",
-        "Midjourney",
-        "RunwayML",
-        "Uizard",
-        "Gamma",
-        "Canva",
-        "Copy.ai"
+        "figma.png",
+        "xd.png",
+        "photoshop.png",
+        "illustrater.png",
+        "framer.png",
+        "notion.png",
+        "miro.png",
+        "chatgpt.png",
+        "canva.png",
       ],
     },
     {
@@ -111,24 +92,14 @@ const Experience = () => {
         "Directed high-quality video content for the company’s YouTube channel. Conducted user research, usability testing, and stayed updated on industry trends for innovative design solutions."
       ],
       Technologies: [
-        "Figma",
-        "Adobe XD",
-        "Adobe Photoshop",
-        "Adobe Illustrator",
-        "Framer",
-        "MUI",
-        "Tailwind CSS",
-        "HTML5",
-        "JavaScript",
-        "Notion",
-        "Miro",
-        "ChatGPT",
-        "Midjourney",
-        "RunwayML",
-        "Uizard",
-        "Canva",
-        "D-ID",
-        "Gamma"
+        "figma.png",
+        "xd.png",
+        "photoshop.png",
+        "illustrater.png",
+        "framer.png",
+        "canva.png",
+        "lightroom.png",
+        "lottifie.png",
       ],
     },
   ];
@@ -143,7 +114,7 @@ const Experience = () => {
               Work <span className="text-gradient">Experience</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              My professional journey in front-end development, building
+              My professional journey in UI Designing, building
               scalable web applications and enhancing user experiences.
             </p>
           </div>
@@ -229,7 +200,7 @@ const Experience = () => {
                             variant="outline"
                             className="border-primary/20 text-primary hover:scale-120  hover:text-primary-foreground transition-colors cursor-default"
                           >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img className="w-10 h-10" src={tech} alt="" />
                           </Badge>
                         ))}

@@ -43,7 +43,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-xl font-bold text-gradient">
+            <h1 className="text-xl md:text-2xl font-bold text-gradient tracking-wide">
               Uttam
             </h1>
           </div>
@@ -54,7 +54,7 @@ const Header = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="nav-link text-sm font-medium cursor-pointer"
+                className="nav-link text-md font-medium cursor-pointer"
               >
                 {item.name}
               </button>
@@ -65,7 +65,7 @@ const Header = () => {
           <div className="hidden md:flex">
             <Button 
               onClick={() => scrollToSection('#contact')}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground glow-effect"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground glow-effect tracking-wide"
             >
               Get In Touch
             </Button>

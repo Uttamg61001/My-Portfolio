@@ -50,13 +50,13 @@ const Footer = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Brand & Description (spans 2 columns on lg) */}
             <div className="col-span-2">
-              <h3 className="text-2xl font-bold text-gradient mb-4">
+              <h3 className="text-2xl font-bold text-gradient mb-4 tracking-wide">
                 Uttam Singhal
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6 max-w-md">
-                Passionate ui/ux designer creating beautiful, responsive
-                web applications with modern technologies. Always eager to learn
-                and take on new challenges.
+                Experienced UI/UX Designer specializing in creating intuitive, 
+                user-centered designs for web and mobile platforms. Skilled in wireframing, prototyping, 
+                and responsive design, delivering functional and visually appealing interfaces.
               </p>
 
               {/* Contact Info */}

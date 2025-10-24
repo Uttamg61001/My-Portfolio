@@ -133,8 +133,8 @@ const Skills = () => {
               />
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D] text-center">
                 <Code className="mx-auto text-primary md:mb-3" size={32} />
-                <div className="text-2xl font-bold text-primary mb-1">2+</div>
-                <div className="text-white text-md">Years UI Desiging</div>
+                <div className="text-2xl font-bold text-primary mb-1">1+</div>
+                <div className="text-white text-md">Frontend Development</div>
               </div>
             </div>
 

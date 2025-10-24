@@ -9,15 +9,15 @@ export default function Document() {
 
         {/* Primary Meta Tags */}
         <title>
-          Uttam Singhal - Frontend Developer | React.js & Next.js Specialist
+          Uttam Singhal - UI/UX Designer | Product & Interaction Design Specialist
         </title>
         <meta
           name="description"
-          content="Uttam Singhal is a skilled frontend developer with 2+ years of experience in React.js, Next.js, TypeScript, and modern web technologies. Specializing in responsive, user-friendly web applications with expertise in Socket.io, Firebase, and Redux."
+          content="Uttam Singhal is an experienced UI/UX Designer skilled in creating intuitive, user-centered designs for web and mobile platforms. Expert in Figma, Adobe XD, and responsive interfaces that balance user needs with business goals."
         />
         <meta
           name="keywords"
-          content="Uttam Singhal, Frontend Developer, React.js Developer, Next.js Developer, JavaScript, TypeScript, Web Developer, UI/UX, Yamunanagar, Haryana, India"
+          content="Uttam Singhal, UI/UX Designer, Product Designer, Figma Expert, Interaction Design, Wireframing, Prototyping, Frontend Designer, React UI, Next.js UI, Sri Ganganagar, Rajasthan, India"
         />
         <meta name="author" content="Uttam Singhal" />
         <meta name="robots" content="index, follow" />
@@ -26,13 +26,13 @@ export default function Document() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Uttam Singhal - Frontend Developer | React.js & Next.js Specialist"
+          content="Uttam Singhal - UI/UX Designer | Product & Interaction Design Specialist"
         />
         <meta
           property="og:description"
-          content="Experienced frontend developer specializing in React.js, Next.js, and TypeScript. Creating responsive web applications with modern technologies like Socket.io, Firebase, and Redux."
+          content="Experienced UI/UX Designer specializing in web and mobile design, wireframing, prototyping, and responsive interfaces. Passionate about creating visually appealing and functional user experiences."
         />
-        <meta property="og:url" content="https://vikaspandey.dev" />
+        <meta property="og:url" content="https://resume-fawn-ten.vercel.app/portfolio" />
         <meta property="og:site_name" content="Uttam Singhal Portfolio" />
         <meta property="og:locale" content="en_US" />
 
@@ -40,19 +40,19 @@ export default function Document() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Uttam Singhal - Frontend Developer"
+          content="Uttam Singhal - UI/UX Designer"
         />
         <meta
           name="twitter:description"
-          content="Frontend developer with expertise in React.js, Next.js, TypeScript. Building responsive web applications with modern technologies."
+          content="UI/UX Designer experienced in creating modern, user-centric web and mobile designs using Figma, Adobe XD, and modern frontend frameworks."
         />
 
         {/* Additional SEO Meta Tags */}
-        <meta name="theme-color" content="#3b82f6" />
-        <meta name="msapplication-TileColor" content="#3b82f6" />
+        <meta name="theme-color" content="#6366f1" />
+        <meta name="msapplication-TileColor" content="#6366f1" />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://vikaspandey.dev" />
+        <link rel="canonical" href="https://resume-fawn-ten.vercel.app/portfolio" />
 
         {/* Favicon */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -82,36 +82,47 @@ export default function Document() {
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Uttam Singhal",
-              jobTitle: "Frontend Developer",
+              jobTitle: "UI/UX Designer",
               description:
-                "Frontend developer with expertise in React.js, Next.js, TypeScript, and modern web technologies",
-              email: "vikaspandey8635@gmail.com",
-              telephone: "+91-8307225020",
+                "UI/UX Designer experienced in creating intuitive, user-friendly designs for web and mobile platforms. Skilled in Figma, Adobe XD, prototyping, and responsive design.",
+              email: "uttamg61001@gmail.com",
+              telephone: "+91-7062467187",
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Yamunanagar",
-                addressRegion: "Haryana",
+                addressLocality: "Sri Ganganagar",
+                addressRegion: "Rajasthan",
                 addressCountry: "India",
               },
               alumniOf: {
                 "@type": "CollegeOrUniversity",
-                name: "Kurukshetra University",
+                name: "Surendra Group of Institutions",
               },
               knowsAbout: [
+                "UI/UX Design",
+                "Figma",
+                "Adobe XD",
+                "Prototyping",
+                "Wireframing",
+                "User Research",
+                "Interaction Design",
+                "Typography",
+                "Color Theory",
                 "React.js",
                 "Next.js",
-                "JavaScript",
-                "TypeScript",
-                "HTML/CSS",
-                "Redux",
-                "Socket.io",
-                "Firebase",
                 "Tailwind CSS",
+                "Material-UI",
+                "Chakra-UI"
               ],
+              sameAs: [
+                "https://github.com/Uttamg61001",
+                "https://www.linkedin.com/in/uttam-singhal-489130244/",
+                "https://resume-fawn-ten.vercel.app/portfolio"
+              ]
             }),
           }}
         />
       </Head>
+
       <body className="antialiased">
         <Main />
         <NextScript />
