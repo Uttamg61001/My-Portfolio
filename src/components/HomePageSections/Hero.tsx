@@ -112,7 +112,7 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full blur-3xl animate-spin-slow" />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10 mt-10 md:mt-0">
+      <div className="container mx-auto px-2 sm:px-6 relative z-10 mt-10 md:mt-0">
         <div className="text-center max-w-4xl mx-auto">
           {/* Greeting */}
           <div className="animate-fade-in mb-4 md:mb-6 flex justify-center">
@@ -121,7 +121,7 @@ const Hero = () => {
     <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
 
     {/* Inner Content (Your Original Tag Style) */}
-    <span className="inline-flex h-full w-full tracking-wide items-center justify-center gap-1.5 md:gap-2 rounded-full bg-background px-3 md:px-5 py-1.5 md:py-2 text-xs md:text-sm font-medium text-white backdrop-blur-3xl border border-primary/10">
+    <span className="inline-flex h-full w-full tracking-wide whitespace-nowrap  items-center justify-center gap-1.5 md:gap-2 rounded-full bg-background px-3 md:px-5 py-1.5 md:py-2 text-[10px] md:text-sm font-medium text-white backdrop-blur-3xl border border-primary/10">
       <Sparkles size={14} className="md:size-5" />
       Crafting Modern Interfaces with Next.js & Figma
     </span>

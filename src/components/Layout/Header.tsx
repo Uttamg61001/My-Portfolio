@@ -54,7 +54,7 @@ const Header = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="nav-link text-md font-medium cursor-pointer"
+                className="nav-link text-md [@media(min-width:768px)]:text-sm font-medium cursor-pointer"
               >
                 {item.name}
               </button>

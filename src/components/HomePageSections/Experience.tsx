@@ -34,6 +34,7 @@ const Experience = () => {
         "Uizard.jpeg",
         "canva.webp",
         "lottifie.webp",
+        "coreldraw.webp",
       ],
     },
     {
@@ -56,7 +57,7 @@ const Experience = () => {
         "miro.webp",
         "chatgpt.webp",
         "Uizard.jpeg",
-        "coreldraw.png",
+        "coreldraw.webp",
       ],
     },
     {

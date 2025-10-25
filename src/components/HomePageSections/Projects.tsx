@@ -146,7 +146,7 @@ export default function Projects() {
       title: "Katalyst Studio - Indonesia-Based Digital Agency",
       description:
         "A sleek and modern digital agency landing page designed to showcase creative services, design process, and successful projects.",
-      image: "thumbnail 10.jpg",
+      image: "thumbnail 10.webp",
       link: "https://www.figma.com/design/WnietlVpcslaHh3fuH6pIl/Landing-Page?node-id=0-1&t=TMF6JPqkeC8MjKJz-1",
       technologies: [
         "Figma",
