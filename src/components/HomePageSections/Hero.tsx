@@ -78,7 +78,7 @@ const Hero = () => {
       id: "mail",
       href: "mailto:uttamg61001@gmail.com",
       icon: <Mail size={32} />,
-      hoverImg: "mail.png",
+      hoverImg: "mail.webp",
     },
     {
       id: "whatspp",
@@ -115,12 +115,20 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 relative z-10 mt-10 md:mt-0">
         <div className="text-center max-w-4xl mx-auto">
           {/* Greeting */}
-          <div className="animate-fade-in mb-4 md:mb-6">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-medium mb-4">
-              <Sparkles size={16} />
-              Crafting Modern Interfaces with Next.js & Figma
-            </span>
-          </div>
+          <div className="animate-fade-in mb-4 md:mb-6 flex justify-center">
+  <button className="relative inline-flex h-10 md:h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 focus:ring-offset-background">
+    {/* Animated Gradient Border */}
+    <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+
+    {/* Inner Content (Your Original Tag Style) */}
+    <span className="inline-flex h-full w-full tracking-wide items-center justify-center gap-1.5 md:gap-2 rounded-full bg-background px-3 md:px-5 py-1.5 md:py-2 text-xs md:text-sm font-medium text-white backdrop-blur-3xl border border-primary/10">
+      <Sparkles size={14} className="md:size-5" />
+      Crafting Modern Interfaces with Next.js & Figma
+    </span>
+  </button>
+</div>
+
+
 
           {/* Main Title */}
           <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 animate-slide-up leading-tight">
@@ -141,11 +149,11 @@ const Hero = () => {
 
           {/* Description */}
           <p
-            className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl sm:max-w-3xl mx-auto mb-6 md:mb-12 leading-relaxed animate-slide-up px-3 sm:px-0"
+            className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl sm:max-w- mx-auto mb-6 md:mb-12 leading-relaxed animate-slide-up px-3 sm:px-0"
             style={{ animationDelay: "0.4s" }}
           >
-            Hi! I’m Uttam Singhal. With 2.9 years of experience in UI/UX and frontend,
-            I specialize in designing user-centered interfaces using Figma, Adobe XD, and modern web technologies.
+            I design user-focused interfaces that blend creativity and function. With 3 years of experience in UI/UX and frontend,
+            I craft seamless digital experiences using Figma, Adobe XD, and Next.js.
           </p>
 
           {/* Action Buttons */}
@@ -174,7 +182,7 @@ const Hero = () => {
 
           {/* Social Links */}
           <div
-            className="flex justify-center gap-4 sm:gap-6 animate-slide-up flex-wrap"
+            className="flex justify-center gap-6  animate-slide-up flex-wrap"
             style={{ animationDelay: "0.8s" }}
           >
             {socials.map((s) => (
@@ -185,7 +193,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 onMouseEnter={() => setHovered(s.id)}
                 onMouseLeave={() => setHovered(null)}
-                className="relative p-3 sm:p-4 rounded-full bg-muted transition-all duration-300 hover:scale-110 hover:glow-effect flex items-center justify-center overflow-hidden"
+                className="relative p-3 sm:p-4 rounded-full bg-muted transition-all duration-300 hover:scale-110 hover:glow-effect flex items-center justify-center "
               >
                 {/* Default Icon */}
                 <div
@@ -196,7 +204,7 @@ const Hero = () => {
                 </div>
 
                 {/* Hover Image */}
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={s.hoverImg}
                   alt={s.id}

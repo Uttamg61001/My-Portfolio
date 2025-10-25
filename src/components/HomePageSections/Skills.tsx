@@ -60,7 +60,7 @@ const Skills = () => {
 
           {/* Additional Skills */}
           <div className="animate-fade-in">
-            <Card className="p-8 card-gradient border-border">
+            <Card className="p-6 md:p-8 card-gradient border-border">
               <div className="text-center mb-8">
                 <div className="flex items-center justify-center gap-3 mb-4">
                   <Zap className="text-primary" size={28} />
@@ -89,7 +89,7 @@ const Skills = () => {
           </div>
 
           {/* Skills Summary */}
-          <div className="mt-6 md:mt-12 grid grid-cols-1 md:grid-cols-4 gap-6 animate-fade-in">
+          <div className="mt-6 md:mt-12 grid grid-cols-1 w-[768px]-grid-cols-2 md:grid-cols-4 gap-6 animate-fade-in">
             {/* Card 1 - Responsive Design */}
             <div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
               <GlowingEffect
@@ -101,7 +101,7 @@ const Skills = () => {
               />
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D] text-center">
                 <Smartphone className="mx-auto text-primary md:mb-3" size={32} />
-                <div className="text-2xl font-bold text-primary mb-1">100%</div>
+                <div className="text-2xl font-bold text-primary">100%</div>
                 <div className="text-white text-md">Responsive Design</div>
               </div>
             </div>
@@ -117,7 +117,7 @@ const Skills = () => {
               />
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D] text-center">
                 <Globe className="mx-auto text-primary md:mb-3" size={32} />
-                <div className="text-2xl font-bold text-primary mb-1">10+</div>
+                <div className="text-2xl font-bold text-primary">10+</div>
                 <div className="text-white text-md">Technologies</div>
               </div>
             </div>
@@ -133,7 +133,7 @@ const Skills = () => {
               />
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D] text-center">
                 <Code className="mx-auto text-primary md:mb-3" size={32} />
-                <div className="text-2xl font-bold text-primary mb-1">1+</div>
+                <div className="text-2xl font-bold text-primary">1+</div>
                 <div className="text-white text-md">Frontend Development</div>
               </div>
             </div>
@@ -149,7 +149,7 @@ const Skills = () => {
               />
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D] text-center">
                 <Zap className="mx-auto text-primary md:mb-3" size={32} />
-                <div className="text-2xl font-bold text-primary mb-1">30%</div>
+                <div className="text-2xl font-bold text-primary ">30%</div>
                 <div className="text-white text-md">Performance Gain</div>
               </div>
             </div>

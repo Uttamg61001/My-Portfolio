@@ -19,21 +19,21 @@ const Experience = () => {
         "Developed a clean and structured UI for an Asset Management System, ensuring seamless inventory tracking."
       ],
       Technologies: [
-        "figma.png",
+        "figma.webp",
         "xd.png",
         "photoshop.png",
         "illustrater.png",
         "framer.png",
-        "mui.png",
+        "mui.webp",
         "tailwind.png",
         "html.png",
-        "JS.png",
-        "notion.png",
-        "miro.png",
-        "chatgpt.png",
+        "JS.webp",
+        "notion.webp",
+        "miro.webp",
+        "chatgpt.webp",
         "Uizard.jpeg",
-        "canva.png",
-        "lottifie.png",
+        "canva.webp",
+        "lottifie.webp",
       ],
     },
     {
@@ -47,14 +47,14 @@ const Experience = () => {
         "Designed and implemented a Doctor Portal for session booking, enhancing user experience and streamlining workflows for healthcare professionals."
       ],
       Technologies: [
-        "figma.png",
+        "figma.webp",
         "photoshop.png",
         "framer.png",
         "tailwind.png",
         "html.png",
-        "notion.png",
-        "miro.png",
-        "chatgpt.png",
+        "notion.webp",
+        "miro.webp",
+        "chatgpt.webp",
         "Uizard.jpeg",
         "coreldraw.png",
       ],
@@ -70,15 +70,15 @@ const Experience = () => {
         "Worked closely with the development team to turn design ideas into a fully functional and responsive website."
       ],
       Technologies: [
-        "figma.png",
+        "figma.webp",
         "xd.png",
         "photoshop.png",
         "illustrater.png",
         "framer.png",
-        "notion.png",
-        "miro.png",
-        "chatgpt.png",
-        "canva.png",
+        "notion.webp",
+        "miro.webp",
+        "chatgpt.webp",
+        "canva.webp",
       ],
     },
     {
@@ -92,14 +92,14 @@ const Experience = () => {
         "Directed high-quality video content for the company’s YouTube channel. Conducted user research, usability testing, and stayed updated on industry trends for innovative design solutions."
       ],
       Technologies: [
-        "figma.png",
+        "figma.webp",
         "xd.png",
         "photoshop.png",
         "illustrater.png",
         "framer.png",
-        "canva.png",
-        "lightroom.png",
-        "lottifie.png",
+        "canva.webp",
+        "lightroom.webp",
+        "lottifie.webp",
       ],
     },
   ];
@@ -227,8 +227,8 @@ const Experience = () => {
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
                 <div className="relative flex flex-1 flex-col justify-between gap-3 text-center">
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-primary mb-1">2.9+</h3>
-                    <h2 className="font-sans text-sm md:text-base text-white">
+                    <h3 className="text-3xl font-bold text-primary mb-2">2.9+</h3>
+                    <h2 className="font-sans text-md md:text-base text-white">
                       Years Experience
                     </h2>
                   </div>
@@ -248,8 +248,8 @@ const Experience = () => {
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
                 <div className="relative flex flex-1 flex-col justify-between gap-3 text-center">
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-primary mb-1">30+</h3>
-                    <h2 className="font-sans text-sm md:text-base text-white">
+                    <h3 className="text-3xl font-bold text-primary mb-2">30+</h3>
+                    <h2 className="font-sans text-md md:text-base text-white">
                       Projects Completed
                     </h2>
                   </div>
@@ -269,8 +269,8 @@ const Experience = () => {
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
                 <div className="relative flex flex-1 flex-col justify-between gap-3 text-center">
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-primary mb-1">30%</h3>
-                    <h2 className="font-sans text-sm md:text-base text-white">
+                    <h3 className="text-3xl font-bold text-primary mb-2">30%</h3>
+                    <h2 className="font-sans text-md md:text-base text-white">
                       Performance Improvement
                     </h2>
                   </div>

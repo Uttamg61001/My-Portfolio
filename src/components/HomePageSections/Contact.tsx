@@ -147,7 +147,7 @@ const Contact = () => {
                 {/* Social Links */}
                 <div className="mb-8">
                   <h4 className="font-medium mb-4">Follow Me</h4>
-                  <div className="flex gap-4">
+                  <div className="flex gap-6">
                     {socials.map((s) => (
                       <a
                         key={s.id}
@@ -156,7 +156,7 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         onMouseEnter={() => setHovered(s.id)}
                         onMouseLeave={() => setHovered(null)}
-                        className="relative p-3 sm:p-4 rounded-full bg-muted transition-all duration-300 hover:scale-110 hover:glow-effect flex items-center justify-center overflow-hidden"
+                        className="relative p-3 sm:p-4 rounded-full bg-muted transition-all duration-300 hover:scale-110 hover:glow-effect flex items-center justify-center "
                       >
                         {/* Default Icon */}
                         <div
@@ -197,7 +197,7 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <Card className="p-8 card-gradient border-border">
+              <Card className="p-6 md:p-8 card-gradient border-border">
                 <h3 className="text-2xl font-semibold mb-6">Send Message</h3>
 
                 <form onSubmit={handleSubmit} className="space-y-6">

@@ -35,7 +35,7 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-background/95 backdrop-blur-md shadow-lg border-b border-border' 
+          ? 'bg-background/50 backdrop-blur-md shadow-lg border-b border-border' 
           : 'bg-transparent'
       }`}
     >
@@ -88,7 +88,7 @@ const Header = () => {
               : 'max-h-0 opacity-0'
           } overflow-hidden`}
         >
-          <nav className="py-4 space-y-3">
+          <nav className="py-4 space-y-3 bg-black/50 backdrop-blur-md">
             {navItems.map((item) => (
               <button
                 key={item.name}
