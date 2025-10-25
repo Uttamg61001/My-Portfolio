@@ -89,7 +89,7 @@ const Skills = () => {
           </div>
 
           {/* Skills Summary */}
-          <div className="mt-6 md:mt-12 grid grid-cols-1 [@media(min-width:768px)]:grid-cols-2 md:grid-cols-4 gap-6 animate-fade-in">
+          <div className="mt-6 md:mt-12 grid grid-cols-1 [@media(width:768px)]:grid-cols-2 md:grid-cols-4 gap-6 animate-fade-in">
             {/* Card 1 - Responsive Design */}
             <div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
               <GlowingEffect
