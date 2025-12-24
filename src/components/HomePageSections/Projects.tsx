@@ -53,21 +53,21 @@ export default function Projects() {
         "Framer Motion",
       ],
     },
-    {
-      title: "Cleaning Services",
-      description:
-        "A fresh and responsive landing page design for cleaning service providers, emphasizing clarity, conversion, and a professional look.",
-      image: "thumbnail-4.webp",
-      link: "https://www.figma.com/design/FPCZiEd5udisHfhnFtT6Km/Cleaning-services-website-landing-page-(Community)?node-id=2-2&t=bzWQsQTbeSEfCQPa-1",
-      technologies: [
-        "Figma",
-        "Illustrator",
-        "Next.js",
-        "Tailwind CSS",
-        "HTML",
-        "Animation",
-      ],
-    },
+    // {
+    //   title: "Cleaning Services",
+    //   description:
+    //     "A fresh and responsive landing page design for cleaning service providers, emphasizing clarity, conversion, and a professional look.",
+    //   image: "thumbnail-4.webp",
+    //   link: "https://www.figma.com/design/FPCZiEd5udisHfhnFtT6Km/Cleaning-services-website-landing-page-(Community)?node-id=2-2&t=bzWQsQTbeSEfCQPa-1",
+    //   technologies: [
+    //     "Figma",
+    //     "Illustrator",
+    //     "Next.js",
+    //     "Tailwind CSS",
+    //     "HTML",
+    //     "Animation",
+    //   ],
+    // },
     {
       title: "Powered by AI",
       description:
@@ -127,21 +127,21 @@ export default function Projects() {
         "API Integration",
       ],
     },
-    {
-      title: "Routine",
-      description:
-        "A habit-tracking mobile app that blends simple UI design with data-driven insights to help users maintain productivity effortlessly.",
-      image: "thumbnail-7.webp",
-      link: "https://www.figma.com/design/pvqzFdqZzP9yji2rpGyL3N/Routiner---Habit-Tracker-App?node-id=0-1&t=PidWcLQhqeMeozLu-1",
-      technologies: [
-        "Figma",
-        "Framer",
-        "React Native",
-        "Expo",
-        "TypeScript",
-        "Chart.js",
-      ],
-    },
+    // {
+    //   title: "Routine",
+    //   description:
+    //     "A habit-tracking mobile app that blends simple UI design with data-driven insights to help users maintain productivity effortlessly.",
+    //   image: "thumbnail-7.webp",
+    //   link: "https://www.figma.com/design/pvqzFdqZzP9yji2rpGyL3N/Routiner---Habit-Tracker-App?node-id=0-1&t=PidWcLQhqeMeozLu-1",
+    //   technologies: [
+    //     "Figma",
+    //     "Framer",
+    //     "React Native",
+    //     "Expo",
+    //     "TypeScript",
+    //     "Chart.js",
+    //   ],
+    // },
     {
       title: "Katalyst Studio - Indonesia-Based Digital Agency",
       description:
