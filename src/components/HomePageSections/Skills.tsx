@@ -25,23 +25,23 @@ const Skills = () => {
     return () => observer.disconnect();
   }, []);
 
-  const additionalSkills = [
-    "User Research",
-    "Wireframing & Prototyping",
-    "Design Systems",
-    "Interaction Design",
-    "Visual Design",
-    "Usability Testing",
-    "Accessibility (WCAG)",
-    "Information Architecture",
-    "Micro-interactions",
-    "Design Thinking",
-    "Responsive UI Design",
-    "Motion Design",
-    "UX Writing",
-    "A/B Testing",
-    "Collaboration with Developers"
-  ];
+ const additionalSkills = [
+  "User Research",
+  "User Flows",
+  "Wireframing",
+  "Prototyping",
+  "Design Systems",
+  "Interaction Design",
+  "Dashboard Design",
+  "Responsive Design",
+  "Usability Testing",
+  "Information Architecture",
+  "Micro-interactions",
+  "Accessibility",
+  "AI-assisted Design",
+  "Developer Handoff",
+  "Figma Dev Mode"
+];
 
   return (
     <section id="skills" className="py-10 md:py-20">

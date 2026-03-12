@@ -9,12 +9,12 @@ const About = () => {
     { icon: Calendar, label: "Experience", value: "3.2+ Years" },
   ];
 
-  const highlights = [
-    "Designed clean, user-friendly interfaces that improved overall usability.",
-    "Turned complex ideas into simple, intuitive design solutions.",
-    "Collaborated with developers to bring creative concepts to life.",
-    "Completed certifications in React-JS, Adobe XD, and UI/UX  ̰Design to sharpen my skills.",
-  ];
+const highlights = [
+  "Designed intuitive dashboards and web interfaces for SaaS, IoT, and enterprise platforms.",
+  "Simplified complex workflows by creating clear user flows, wireframes, and interactive prototypes.",
+  "Worked closely with developers to ensure designs were implemented accurately and remained consistent across products.",
+  "Experienced in building responsive UI and scalable design systems for modern web applications."
+];
 
   return (
     <section id="about" className="py-10 md:py-20 bg-secondary/20">
@@ -95,11 +95,12 @@ const About = () => {
                   </h3>
 
                   <p className="text-muted-foreground leading-relaxed mb-6">
-                    Experienced UI/UX Designer specializing in creating intuitive,
-                    user-centered designs for web and mobile platforms. Skilled
-                    in wireframing, prototyping, and responsive design, delivering
-                    functional and visually appealing interfaces. Adept at aligning
-                    user needs with business goals to enhance digital experiences.
+                    Experienced UI/UX Designer specializing in SaaS platforms,
+                    AI products, IoT dashboards, and enterprise web applications.
+                    Skilled in user research, wireframing, prototyping, design sys-
+                    tems, and responsive design, with strong expertise in dashboard
+                    design and data visualization. Focused on creating user-centered,
+                    scalable digital experiences aligned with business goals.
                   </p>
 
                   {/* Key Highlights */}

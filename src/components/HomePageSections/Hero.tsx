@@ -152,7 +152,7 @@ const Hero = () => {
             className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl sm:max-w- mx-auto mb-6 md:mb-12 leading-relaxed animate-slide-up px-3 sm:px-0"
             style={{ animationDelay: "0.4s" }}
           >
-            I design user-focused interfaces that blend creativity and function. With 3 years of experience in UI/UX and frontend,
+            I design user-focused interfaces that blend creativity and function. With 3+ years of experience in UI/UX and frontend,
             I craft seamless digital experiences using Figma, Adobe XD, and Next.js.
           </p>
 

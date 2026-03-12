@@ -4,106 +4,116 @@ import { Building, Calendar, MapPin, ChevronRight } from "lucide-react";
 import { GlowingEffect } from "../ui/glowing-effect";
 
 const Experience = () => {
-  const experiences = [
-    {
-      title: "Senior UI/UX Designer",
-      company: "E Software Solutions",
-      location: "Yamuna Nagar, Haryana",
-      duration: "Jan 2025 – Present",
-      type: "Full-time",
-      responsibilities: [
-        "Focused on making complex IoT data easy to understand with clear dashboards, status updates, and alerts.",
-        "Designed unified dashboards in Figma to bring Trello, Xero, HubSpot, and Net360 together in one platform.",
-        "Created user flows and prototypes for managing projects, finances, and CRM data seamlessly.",
-        "Designed and developed responsive dashboards for Cyber Security analytics, improving data visualization and user experience.",
-        "Developed a clean and structured UI for an Asset Management System, ensuring seamless inventory tracking."
-      ],
-      Technologies: [
-        "figma.webp",
-        "xd.png",
-        "photoshop.png",
-        "illustrater.png",
-        "framer.png",
-        "mui.webp",
-        "tailwind.png",
-        "html.png",
-        "JS.webp",
-        "notion.webp",
-        "miro.webp",
-        "chatgpt.webp",
-        "Uizard.jpeg",
-        "canva.webp",
-        "lottifie.webp",
-        "coreldraw.webp",
-      ],
-    },
-    {
-      title: "Senior UI/UX Designer",
-      company: "Sukrut Associates",
-      location: "Jaipur, Rajasthan",
-      duration: "June 2024 – Dec 2024",
-      type: "Full-time",
-      responsibilities: [
-        "Proficient in translating complex requirements into elegant, user-friendly designs, ensuring consistency across web and mobile platforms.",
-        "Designed and implemented a Doctor Portal for session booking, enhancing user experience and streamlining workflows for healthcare professionals."
-      ],
-      Technologies: [
-        "figma.webp",
-        "photoshop.png",
-        "framer.png",
-        "tailwind.png",
-        "html.png",
-        "notion.webp",
-        "miro.webp",
-        "chatgpt.webp",
-        "Uizard.jpeg",
-        "coreldraw.webp",
-      ],
-    },
-    {
-      title: "UI/UX Designer",
-      company: "Urban-Chat",
-      location: "Work From Home",
-      duration: "August 2023 - May 2024",
-      type: "Full-time",
-      responsibilities: [
-        "Designed an advanced AI chat and support interface, seamlessly integrating it into web and mobile platforms like Slack and WhatsApp for enhanced user experience.",
-        "Worked closely with the development team to turn design ideas into a fully functional and responsive website."
-      ],
-      Technologies: [
-        "figma.webp",
-        "xd.png",
-        "photoshop.png",
-        "illustrater.png",
-        "framer.png",
-        "notion.webp",
-        "miro.webp",
-        "chatgpt.webp",
-        "canva.webp",
-      ],
-    },
-    {
-      title: "UI/UX Designer",
-      company: "Apna Konnect",
-      location: "Work From Home",
-      duration: "Jan 2023 - July 2023",
-      type: "Full-time",
-      responsibilities: [
-        "Lead the development of UI/UX design for mobile applications and websites, creating user experience and visual impact.",
-        "Directed high-quality video content for the company’s YouTube channel. Conducted user research, usability testing, and stayed updated on industry trends for innovative design solutions."
-      ],
-      Technologies: [
-        "figma.webp",
-        "xd.png",
-        "photoshop.png",
-        "illustrater.png",
-        "framer.png",
-        "canva.webp",
-        "lightroom.webp",
-        "lottifie.webp",
-      ],
-    },
-  ];
+const experiences = [
+  {
+    title: "Senior UI/UX Designer",
+    company: "E Software Solutions",
+    location: "Yamuna Nagar, Haryana",
+    duration: "Jan 2025 – February 2026",
+    type: "Full-time",
+    responsibilities: [
+      "Worked on IoT-based platforms and designed dashboards that help users easily monitor device status, alerts, and operational data.",
+      "Designed product dashboards in Figma that bring tools like Trello, Xero, HubSpot, and Net360 into one simple interface so teams can manage their work from a single place.",
+      "Prepared user flows, wireframes, and interactive prototypes to simplify how users manage projects, financial records, and CRM activities.",
+      "Designed cybersecurity analytics dashboards with clear charts and visual elements so users can quickly understand system activity and risks.",
+      "Created the UI for an Asset Management System focused on easy asset tracking, inventory management, and smooth navigation.",
+      "Worked closely with developers to make sure the designs were implemented properly and remained consistent across the product."
+    ],
+    Technologies: [
+      "figma.webp",
+      "xd.png",
+      "photoshop.png",
+      "illustrater.png",
+      "framer.png",
+      "mui.webp",
+      "tailwind.png",
+      "html.png",
+      "JS.webp",
+      "notion.webp",
+      "miro.webp",
+      "chatgpt.webp",
+      "Uizard.jpeg",
+      "canva.webp",
+      "lottifie.webp",
+      "coreldraw.webp",
+    ],
+  },
+  {
+    title: "Senior UI/UX Designer",
+    company: "Sukrut Associates",
+    location: "Jaipur, Rajasthan",
+    duration: "June 2024 – Dec 2024",
+    type: "Full-time",
+    responsibilities: [
+      "Designed web and mobile interfaces based on product requirements while keeping the experience simple and easy for users.",
+      "Designed a Doctor Portal that allows doctors to manage session bookings, schedules, and appointments more efficiently.",
+      "Created wireframes and prototypes to test the booking flow and improve how doctors and patients interact with the system.",
+      "Maintained consistent layouts, components, and visual styles across the platform to keep the interface clean and organized.",
+      "Worked with the development team during implementation to ensure the final product matched the design."
+    ],
+    Technologies: [
+      "figma.webp",
+      "photoshop.png",
+      "framer.png",
+      "tailwind.png",
+      "html.png",
+      "notion.webp",
+      "miro.webp",
+      "chatgpt.webp",
+      "Uizard.jpeg",
+      "coreldraw.webp",
+    ],
+  },
+  {
+    title: "UI/UX Designer",
+    company: "Urban-Chat",
+    location: "Work From Home",
+    duration: "August 2023 - May 2024",
+    type: "Full-time",
+    responsibilities: [
+      "Designed AI-based chat and support interfaces for web and mobile platforms.",
+      "Created chat layouts and interaction flows that make conversations with AI assistants clear and easy for users.",
+      "Worked on integrations with platforms like Slack and WhatsApp to improve the support experience.",
+      "Prepared UI screens and prototypes that helped the development team understand the product flow before implementation.",
+      "Ensured the design worked well across different devices and screen sizes."
+    ],
+    Technologies: [
+      "figma.webp",
+      "xd.png",
+      "photoshop.png",
+      "illustrater.png",
+      "framer.png",
+      "notion.webp",
+      "miro.webp",
+      "chatgpt.webp",
+      "canva.webp",
+    ],
+  },
+  {
+    title: "UI/UX Designer",
+    company: "Apna Konnect",
+    location: "Work From Home",
+    duration: "Jan 2023 - July 2023",
+    type: "Full-time",
+    responsibilities: [
+      "Worked on UI/UX design for mobile apps and websites, focusing on creating clear user flows and visually clean interfaces.",
+      "Prepared wireframes and design prototypes to explain product ideas before development started.",
+      "Conducted basic user research and reviewed similar products to improve usability.",
+      "Created visual and promotional content for the company’s YouTube channel.",
+      "Stayed updated with new design trends and tools to improve the quality of design work."
+    ],
+    Technologies: [
+      "figma.webp",
+      "xd.png",
+      "photoshop.png",
+      "illustrater.png",
+      "framer.png",
+      "canva.webp",
+      "lightroom.webp",
+      "lottifie.webp",
+    ],
+  },
+];
 
   return (
     <section id="experience" className="py-10 md:py-20">
@@ -228,7 +238,7 @@ const Experience = () => {
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
                 <div className="relative flex flex-1 flex-col justify-between gap-3 text-center">
                   <div className="space-y-3">
-                    <h3 className="text-3xl font-bold text-primary mb-2">2.9+</h3>
+                    <h3 className="text-3xl font-bold text-primary mb-2">3.2+</h3>
                     <h2 className="font-sans text-md md:text-base text-white">
                       Years Experience
                     </h2>
@@ -249,7 +259,7 @@ const Experience = () => {
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
                 <div className="relative flex flex-1 flex-col justify-between gap-3 text-center">
                   <div className="space-y-3">
-                    <h3 className="text-3xl font-bold text-primary mb-2">30+</h3>
+                    <h3 className="text-3xl font-bold text-primary mb-2">40+</h3>
                     <h2 className="font-sans text-md md:text-base text-white">
                       Projects Completed
                     </h2>
