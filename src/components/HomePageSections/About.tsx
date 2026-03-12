@@ -6,7 +6,7 @@ const About = () => {
     { icon: MapPin, label: "Location", value: "Sri Ganganagar, Rajasthan" },
     { icon: Phone, label: "Phone", value: "+91 7062467187" },
     { icon: Mail, label: "Email", value: "uttamg61001@gmail.com" },
-    { icon: Calendar, label: "Experience", value: "2.9+ Years" },
+    { icon: Calendar, label: "Experience", value: "3.2+ Years" },
   ];
 
   const highlights = [
@@ -76,7 +76,7 @@ const About = () => {
                     Surendera Group of Institute, Sri Ganganagar
                   </p>
                   <p className="text-muted-foreground text-sm">
-                    July 2020 – July 2025
+                    July 2020 – July 2024
                   </p>
                 </div>
               </Card>
