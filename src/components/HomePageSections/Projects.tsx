@@ -11,149 +11,121 @@ export default function Projects() {
     {
       title: "Chain Optimization",
       description:
-        "A conversion-focused logistics optimization dashboard built to simplify supply chain analytics and operational efficiency with clear data visualization and minimal UI.",
+        "Designed a logistics and supply chain dashboard that simplifies operational workflows through real-time analytics, intuitive data visualization, responsive layouts, and user-centered dashboard experiences.",
       image: "thumbnail-2.webp",
-      link: "https://www.figma.com/design/xnT7HY0TOAwTUYt2ydrlVM/Assignment?node-id=1-3&t=gaxPpIoWYsq36WBZ-1",
+      link: "...",
       technologies: [
         "Figma",
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Chart.js",
+        "Dashboard Design",
+        "Data Visualization",
+        "Design System",
         "Responsive Design",
+        "Interactive Prototype",
       ],
     },
     {
       title: "Chat-Bot",
       description:
-        "An AI-powered chatbot interface designed for seamless communication, featuring conversational UI patterns, user-friendly flow, and responsive layouts.",
+        "Designed an AI-powered conversational platform focused on intuitive chat experiences, seamless communication workflows, responsive interfaces, and reusable UI components for web applications.",
       image: "thumbnail-3.webp",
-      link: "https://www.figma.com/design/nKRPi5J27RAgYDxHYONOBR/Urban-Chat?node-id=0-6373&t=KgdKQNnAKZIB1hnn-1",
+      link: "...",
       technologies: [
         "Figma",
-        "Adobe XD",
-        "Next.js",
-        "Tailwind CSS",
-        "Shadcn/UI",
-        "AI Integration",
+        "AI Chat",
+        "User Flow",
+        "Prototype",
+        "Responsive Design",
+        "Design System",
       ],
     },
     {
       title: "Technologies",
       description:
-        "A modern agency landing page highlighting services, projects, and brand identity with both dark and light themes for improved accessibility.",
+        "Designed a modern digital agency website with responsive layouts, scalable UI components, engaging visual hierarchy, and conversion-focused user experiences across light and dark themes.",
       image: "thumbnail-1.webp",
-      link: "https://www.figma.com/design/D2opEHQGXDDlljrYnoScnF/RR-Technologies-%7C-Dark-and-light-UI-%7C-Agency-landing-page-free-(Community)?node-id=0-1&t=I3n5anFQ4aClHk5w-1",
+      link: "...",
       technologies: [
         "Figma",
-        "Framer",
-        "React.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Framer Motion",
+        "Responsive Design",
+        "Auto Layout",
+        "Design System",
+        "Typography",
+        "Visual Hierarchy",
       ],
     },
-    // {
-    //   title: "Cleaning Services",
-    //   description:
-    //     "A fresh and responsive landing page design for cleaning service providers, emphasizing clarity, conversion, and a professional look.",
-    //   image: "thumbnail-4.webp",
-    //   link: "https://www.figma.com/design/FPCZiEd5udisHfhnFtT6Km/Cleaning-services-website-landing-page-(Community)?node-id=2-2&t=bzWQsQTbeSEfCQPa-1",
-    //   technologies: [
-    //     "Figma",
-    //     "Illustrator",
-    //     "Next.js",
-    //     "Tailwind CSS",
-    //     "HTML",
-    //     "Animation",
-    //   ],
-    // },
     {
       title: "Powered by AI",
       description:
-        "An experimental AI dashboard interface focused on visual storytelling, automation insights, and futuristic UI components.",
+        "Designed an AI dashboard that presents automation insights, analytics, and intelligent workflows through modern interfaces, reusable components, and intuitive data visualization.",
       image: "thumbnail-9.webp",
-      link: "https://www.figma.com/design/Necv44SJ9Qik7q8G5Zhoj6/Untitled?node-id=1-675&t=obfovtNgBErxrJy3-1",
+      link: "...",
       technologies: [
         "Figma",
-        "Framer",
-        "React.js",
-        "Tailwind CSS",
-        "AI Models",
-        "APIs",
+        "Dashboard Design",
+        "AI Experience",
+        "Data Visualization",
+        "Prototype",
+        "Responsive Design",
       ],
     },
     {
       title: "Mandiram",
       description:
-        "A devotional mobile app concept allowing users to explore temples, rituals, and spiritual content with calm, spiritual-focused UI design.",
+        "Designed a mobile application that helps users discover temples, rituals, and spiritual content through a clean, accessible, and user-friendly interface with seamless navigation.",
       image: "thumbnail-6.webp",
-      link: "https://www.figma.com/design/YHBLH5RLOWQl9sIBruuwjp/Mandiram?node-id=1-18965&t=IhQ3og2ASTls2nc2-1",
+      link: "...",
       technologies: [
         "Figma",
-        "LottieFiles",
-        "React Native",
-        "Firebase",
-        "Tailwind CSS",
-        "TypeScript",
+        "Mobile UI",
+        "Design System",
+        "Prototype",
+        "Responsive Design",
+        "User Flow",
       ],
     },
     {
       title: "Guru-ji Finder",
       description:
-        "An app to connect users with nearby spiritual mentors and event organizers, with a location-based search and calm, devotional UI theme.",
+        "Designed a location-based mobile application enabling users to discover nearby spiritual mentors and events through intuitive search, maps, and streamlined user journeys.",
       image: "thumbnail-8.webp",
-      link: "https://www.figma.com/design/WWPXgz04Gtl5CDst76hSx5/Guru-ji-Finder-UI?node-id=1-13500&t=T7jsdMG5agNpyyS8-1",
+      link: "...",
       technologies: [
         "Figma",
-        "Adobe XD",
-        "React Native",
-        "Google Maps API",
-        "Tailwind CSS",
+        "Google Maps",
+        "Mobile Design",
+        "User Research",
+        "Prototype",
+        "Responsive Design",
       ],
     },
     {
       title: "Cineview",
       description:
-        "A movie discovery platform that combines cinematic visuals with easy navigation and an elegant, entertainment-focused UI experience.",
+        "Designed a modern movie discovery platform focused on seamless content exploration, intuitive navigation, responsive layouts, and an engaging entertainment experience.",
       image: "thumbnail-5.webp",
-      link: "https://www.figma.com/design/8tm46QNNHoyzXBT4mdgRev/Cineview?node-id=0-1&t=71zi2TfrGNX0Y7k2-1",
+      link: "...",
       technologies: [
         "Figma",
-        "Framer",
-        "Next.js",
-        "Tailwind CSS",
-        "Redux",
-        "API Integration",
+        "Responsive Design",
+        "Visual Design",
+        "Prototype",
+        "Information Architecture",
+        "UI Components",
       ],
     },
-    // {
-    //   title: "Routine",
-    //   description:
-    //     "A habit-tracking mobile app that blends simple UI design with data-driven insights to help users maintain productivity effortlessly.",
-    //   image: "thumbnail-7.webp",
-    //   link: "https://www.figma.com/design/pvqzFdqZzP9yji2rpGyL3N/Routiner---Habit-Tracker-App?node-id=0-1&t=PidWcLQhqeMeozLu-1",
-    //   technologies: [
-    //     "Figma",
-    //     "Framer",
-    //     "React Native",
-    //     "Expo",
-    //     "TypeScript",
-    //     "Chart.js",
-    //   ],
-    // },
     {
-      title: "Katalyst Studio - Indonesia-Based Digital Agency",
+      title: "Katalyst Studio",
       description:
-        "A sleek and modern digital agency landing page designed to showcase creative services, design process, and successful projects.",
+        "Designed a high-converting digital agency website showcasing services, portfolio, and brand identity through modern layouts, scalable design systems, and responsive user experiences.",
       image: "thumbnail 10.webp",
-      link: "https://www.figma.com/design/WnietlVpcslaHh3fuH6pIl/Landing-Page?node-id=0-1&t=TMF6JPqkeC8MjKJz-1",
+      link: "...",
       technologies: [
         "Figma",
-        "Illustrator",
-        "Framer",
-        "LottieFiles",
-        "Framer Motion"
+        "Design System",
+        "Responsive Design",
+        "Typography",
+        "Auto Layout",
+        "Visual Hierarchy",
       ],
     },
   ];
@@ -165,13 +137,14 @@ export default function Projects() {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16 animate-fade-in">
+          <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               Featured <span className="text-gradient">Projects</span>
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              A showcase of my recent work, demonstrating expertise in modern
-              web development technologies and user-centered design.
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+              A collection of product design projects showcasing my experience in designing SaaS platforms, AI products, enterprise applications,
+              and responsive web & mobile experiences with a strong focus on usability, scalability, and user-centered design.
+
             </p>
           </div>
 

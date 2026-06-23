@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import {  useEffect } from "react";
+import { useEffect } from "react";
 import { Code, Globe, Smartphone, Zap } from "lucide-react";
 import { GlowingEffect } from "../ui/glowing-effect";
 
@@ -25,36 +25,41 @@ const Skills = () => {
     return () => observer.disconnect();
   }, []);
 
- const additionalSkills = [
-  "User Research",
-  "User Flows",
-  "Wireframing",
-  "Prototyping",
-  "Design Systems",
-  "Interaction Design",
-  "Dashboard Design",
-  "Responsive Design",
-  "Usability Testing",
-  "Information Architecture",
-  "Micro-interactions",
-  "Accessibility",
-  "AI-assisted Design",
-  "Developer Handoff",
-  "Figma Dev Mode"
-];
+  const additionalSkills = [
+    "User Research",
+    "User Flows",
+    "Information Architecture",
+    "Wireframing",
+    "Interactive Prototyping",
+    "Design Systems",
+    "Responsive Design",
+    "Dashboard Design",
+    "Data Visualization",
+    "Interaction Design",
+    "Usability Testing",
+    "Accessibility",
+    "Developer Handoff",
+    "Figma Dev Mode",
+    "AI-assisted Design",
+    "Figma AI",
+    "Creatie AI",
+    "ChatGPT",
+    "Claude AI",
+    "Notion AI",
+  ];
 
   return (
     <section id="skills" className="py-10 md:py-20">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16 animate-fade-in">
+          <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Technical <span className="text-gradient">Skills</span>
+              Design <span className="text-gradient">Expertise</span>
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              A comprehensive overview of my technical expertise and proficiency
-              levels across various technologies and tools.
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+              A combination of user-centered design, product thinking, and modern design practices used to create intuitive,
+              scalable, and impactful digital experiences across web and mobile platforms.
             </p>
           </div>
 
@@ -65,11 +70,12 @@ const Skills = () => {
                 <div className="flex items-center justify-center gap-3 mb-4">
                   <Zap className="text-primary" size={28} />
                   <h3 className="text-2xl font-semibold">
-                    Additional Expertise
+                    Core Design Expertise
                   </h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Beyond visual creativity, I bring user-centered design thinking and modern software design practices.
+                  Experienced in transforming business requirements into intuitive digital products through user research, design systems,
+                  prototyping, responsive design, and seamless developer collaboration.
                 </p>
               </div>
 
@@ -117,7 +123,7 @@ const Skills = () => {
               />
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D] text-center">
                 <Globe className="mx-auto text-primary md:mb-3" size={32} />
-                <div className="text-2xl font-bold text-primary">10+</div>
+                <div className="text-2xl font-bold text-primary">20+</div>
                 <div className="text-white text-md">Technologies</div>
               </div>
             </div>
@@ -133,8 +139,8 @@ const Skills = () => {
               />
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D] text-center">
                 <Code className="mx-auto text-primary md:mb-3" size={32} />
-                <div className="text-2xl font-bold text-primary">1+</div>
-                <div className="text-white text-md">Frontend Development</div>
+                <div className="text-2xl font-bold text-primary">8+</div>
+                <div className="text-white text-md">Industry Domains</div>
               </div>
             </div>
 
@@ -148,9 +154,9 @@ const Skills = () => {
                 inactiveZone={0.01}
               />
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D] text-center">
-                <Zap className="mx-auto text-primary md:mb-3" size={32} />
-                <div className="text-2xl font-bold text-primary ">30%</div>
-                <div className="text-white text-md">Performance Gain</div>
+                <Zap className="mx-auto text-primary md:mb-3 " size={32} />
+                <div className="text-2xl font-bold text-primary">Web & Mobile</div>
+                <div className="text-white text-md">Product Design</div>
               </div>
             </div>
           </div>

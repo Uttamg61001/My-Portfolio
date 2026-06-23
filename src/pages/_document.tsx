@@ -9,15 +9,15 @@ export default function Document() {
 
         {/* Primary Meta Tags */}
         <title>
-          Uttam Singhal - UI/UX Designer | Product & Interaction Design Specialist
+          Uttam Singhal | UI/UX Designer | Product Designer | SaaS & Enterprise Design Expert
         </title>
         <meta
           name="description"
-          content="Uttam Singhal is an experienced UI/UX Designer skilled in creating intuitive, user-centered designs for web and mobile platforms. Expert in Figma, Adobe XD, and responsive interfaces that balance user needs with business goals."
+          content="UI/UX Designer with 3+ years of experience designing SaaS platforms, AI products, enterprise dashboards, and responsive web and mobile applications. Specialized in Figma, user research, wireframing, prototyping, design systems, and developer handoff."
         />
         <meta
           name="keywords"
-          content="Uttam Singhal, UI/UX Designer, Product Designer, Figma Expert, Interaction Design, Wireframing, Prototyping, Frontend Designer, React UI, Next.js UI, Sri Ganganagar, Rajasthan, India"
+          content="Uttam Singhal, UI UX Designer, Product Designer, SaaS Designer, Enterprise UI Designer, Dashboard Designer, Figma Expert, UX Research, Design Systems, Wireframing, Prototyping, User Flows, Information Architecture, AI Product Designer, Responsive Design, Developer Handoff, Figma Dev Mode, Rajasthan, India"
         />
         <meta name="author" content="Uttam Singhal" />
         <meta name="robots" content="index, follow" />
@@ -26,13 +26,16 @@ export default function Document() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Uttam Singhal - UI/UX Designer | Product & Interaction Design Specialist"
+          content="Uttam Singhal | UI/UX Designer | Product Designer"
         />
         <meta
           property="og:description"
-          content="Experienced UI/UX Designer specializing in web and mobile design, wireframing, prototyping, and responsive interfaces. Passionate about creating visually appealing and functional user experiences."
+          content="Explore the portfolio of Uttam Singhal, a UI/UX Designer with expertise in SaaS products, AI platforms, enterprise dashboards, design systems, and responsive web & mobile experiences."
         />
-        <meta property="og:url" content="https://resume-fawn-ten.vercel.app/portfolio" />
+        <meta
+          property="og:url"
+          content="https://my-portfolio-rust-six-10.vercel.app"
+        />
         <meta property="og:site_name" content="Uttam Singhal Portfolio" />
         <meta property="og:locale" content="en_US" />
 
@@ -52,26 +55,28 @@ export default function Document() {
         <meta name="msapplication-TileColor" content="#6366f1" />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://resume-fawn-ten.vercel.app/portfolio" />
-
+        <link
+          rel="canonical"
+          href="https://my-portfolio-rust-six-10.vercel.app"
+        />
         {/* Favicon */}
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/Favicon.jpg" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href="/Favicon.jpg"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="/Favicon.jpg"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href="/Favicon.jpg"
         />
 
         {/* Structured Data for SEO */}
@@ -82,11 +87,9 @@ export default function Document() {
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Uttam Singhal",
-              jobTitle: "UI/UX Designer",
+              jobTitle: "UI/UX Designer & Product Designer",
               description:
-                "UI/UX Designer experienced in creating intuitive, user-friendly designs for web and mobile platforms. Skilled in Figma, Adobe XD, prototyping, and responsive design.",
-              email: "uttamg61001@gmail.com",
-              telephone: "+91-7062467187",
+                "UI/UX Designer with 3+ years of experience designing SaaS products, AI platforms, enterprise dashboards, and responsive web & mobile applications.",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Sri Ganganagar",
@@ -99,24 +102,30 @@ export default function Document() {
               },
               knowsAbout: [
                 "UI/UX Design",
+                "Product Design",
                 "Figma",
-                "Adobe XD",
-                "Prototyping",
-                "Wireframing",
+                "Design Systems",
                 "User Research",
-                "Interaction Design",
-                "Typography",
-                "Color Theory",
+                "Wireframing",
+                "Interactive Prototyping",
+                "Dashboard Design",
+                "Enterprise Applications",
+                "SaaS Platforms",
+                "AI Products",
+                "Information Architecture",
+                "Responsive Design",
+                "Accessibility",
+                "Usability Testing",
+                "Developer Handoff",
+                "Figma Dev Mode",
                 "React.js",
                 "Next.js",
-                "Tailwind CSS",
-                "Material-UI",
-                "Chakra-UI"
+                "Tailwind CSS"
               ],
               sameAs: [
                 "https://github.com/Uttamg61001",
                 "https://www.linkedin.com/in/uttam-singhal-489130244/",
-                "https://resume-fawn-ten.vercel.app/portfolio"
+                "https://my-portfolio-rust-six-10.vercel.app"
               ]
             }),
           }}

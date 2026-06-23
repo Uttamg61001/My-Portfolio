@@ -8,7 +8,7 @@ import { BsGithub } from "react-icons/bs";
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const roles = useMemo(
-    () => ["UI/UX Designer", "Graphic Designer", "Front-End Developer"],
+    () => ["Product Designer", "UI/UX Designer", "Graphic Designer", "Front-End Developer"],
     []
   );
   const [roleIndex, setRoleIndex] = useState(0);
@@ -116,19 +116,17 @@ const Hero = () => {
         <div className="text-center max-w-4xl mx-auto">
           {/* Greeting */}
           <div className="animate-fade-in mb-4 md:mb-6 flex justify-center">
-  <button className="relative inline-flex h-10 md:h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 focus:ring-offset-background">
-    {/* Animated Gradient Border */}
-    <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+            <button className="relative inline-flex h-10 md:h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 focus:ring-offset-background">
+              {/* Animated Gradient Border */}
+              <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
 
-    {/* Inner Content (Your Original Tag Style) */}
-    <span className="inline-flex h-full w-full tracking-wide whitespace-nowrap  items-center justify-center gap-1.5 md:gap-2 rounded-full bg-background px-3 md:px-5 py-1.5 md:py-2 text-[10px] md:text-sm font-medium text-white backdrop-blur-3xl border border-primary/10">
-      <Sparkles size={14} className="md:size-5" />
-      Crafting Modern Interfaces with Next.js & Figma
-    </span>
-  </button>
-</div>
-
-
+              {/* Inner Content (Your Original Tag Style) */}
+              <span className="inline-flex h-full w-full tracking-wide whitespace-nowrap  items-center justify-center gap-1.5 md:gap-2 rounded-full bg-background px-3 md:px-5 py-1.5 md:py-2 text-[10px] md:text-sm font-medium text-white backdrop-blur-3xl border border-primary/10">
+                <Sparkles size={14} className="md:size-5" />
+                Designing SaaS, AI & Enterprise Digital Products
+              </span>
+            </button>
+          </div>
 
           {/* Main Title */}
           <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 animate-slide-up leading-tight">
@@ -149,11 +147,11 @@ const Hero = () => {
 
           {/* Description */}
           <p
-            className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl sm:max-w- mx-auto mb-6 md:mb-12 leading-relaxed animate-slide-up px-3 sm:px-0"
+            className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl sm:max-w-3xl mx-auto mb-6 md:mb-12 leading-relaxed animate-slide-up px-3 sm:px-0"
             style={{ animationDelay: "0.4s" }}
           >
-            I design user-focused interfaces that blend creativity and function. With 3+ years of experience in UI/UX and frontend,
-            I craft seamless digital experiences using Figma, Adobe XD, and Next.js.
+            Product UI/UX Designer with 3+ years of experience designing AI products, SaaS platforms, and enterprise applications.
+            I specialize in transforming complex business requirements into intuitive user experiences through user research, wireframing, prototyping, and scalable design systems using Figma.
           </p>
 
           {/* Action Buttons */}

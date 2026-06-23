@@ -6,15 +6,15 @@ const About = () => {
     { icon: MapPin, label: "Location", value: "Sri Ganganagar, Rajasthan" },
     { icon: Phone, label: "Phone", value: "+91 7062467187" },
     { icon: Mail, label: "Email", value: "uttamg61001@gmail.com" },
-    { icon: Calendar, label: "Experience", value: "3.2+ Years" },
+    { icon: Calendar, label: "Experience", value: "3+ Years" },
   ];
 
-const highlights = [
-  "Designed intuitive dashboards and web interfaces for SaaS, IoT, and enterprise platforms.",
-  "Simplified complex workflows by creating clear user flows, wireframes, and interactive prototypes.",
-  "Worked closely with developers to ensure designs were implemented accurately and remained consistent across products.",
-  "Experienced in building responsive UI and scalable design systems for modern web applications."
-];
+  const highlights = [
+    "Designed user-centric SaaS, AI, IoT, and enterprise applications with a strong focus on usability and scalable user experiences.",
+    "Translated complex business requirements into structured user flows, wireframes, high-fidelity interfaces, and interactive prototypes.",
+    "Built reusable design systems, responsive UI components, and maintained design consistency across web and mobile products.",
+    "Collaborated with product managers and developers to deliver production-ready designs with seamless developer handoff."
+  ];
 
   return (
     <section id="about" className="py-10 md:py-20 bg-secondary/20">
@@ -26,14 +26,13 @@ const highlights = [
               About <span className="text-gradient">Me</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Get to know more about my background, experience, and what drives
-              my passion for development.
+              Product UI/UX Designer with experience designing SaaS platforms, AI products, enterprise applications, and responsive digital experiences for web and mobile.
             </p>
           </div>
           <div className="flex items-center gap-3 mb-6">
             <User className="text-primary" size={24} />
             <h3 className="text-2xl font-semibold">
-              Personal Information
+              Professional Information
             </h3>
           </div>
           <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -70,8 +69,7 @@ const highlights = [
                 </h4>
                 <div>
                   <h5 className="font-medium">
-                    B.Tech in Computer Science and Engineering
-                  </h5>
+                    Bachelor of Technology (B.Tech) in Computer Science Engineering                  </h5>
                   <p className="text-muted-foreground">
                     Surendera Group of Institute, Sri Ganganagar
                   </p>
@@ -95,12 +93,9 @@ const highlights = [
                   </h3>
 
                   <p className="text-muted-foreground leading-relaxed mb-6">
-                    Experienced UI/UX Designer specializing in SaaS platforms,
-                    AI products, IoT dashboards, and enterprise web applications.
-                    Skilled in user research, wireframing, prototyping, design sys-
-                    tems, and responsive design, with strong expertise in dashboard
-                    design and data visualization. Focused on creating user-centered,
-                    scalable digital experiences aligned with business goals.
+                    Product UI/UX Designer with 3+ years of experience designing SaaS platforms, AI products, IoT solutions, and enterprise applications.
+                    I specialize in transforming complex business requirements into intuitive user experiences through user research, user flows, wireframes, interactive prototypes, and scalable design systems.
+                    I collaborate closely with product managers and developers to deliver responsive, user-centered digital products that align with both business and user goals.
                   </p>
 
                   {/* Key Highlights */}

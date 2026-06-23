@@ -110,7 +110,7 @@ const Contact = () => {
               Get In <span className="text-gradient">Touch</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Ready to collaborate on your next project? Let&apos;s discuss how I can help bring your ideas to life with modern web development.
+              Looking for a UI/UX Designer to create intuitive, scalable, and user-centered digital products? Let's connect and build exceptional web and mobile experiences together.
             </p>
           </div>
 
@@ -118,11 +118,12 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="animate-slide-up">
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-6">Let&apos;s Connect</h3>
-                <p className="text-muted-foregro]und leading-relaxed mb-8">
-                  I&apos;m always interested in new opportunities, challenging projects, and collaborations.
-                  Whether you&apos;re a startup looking to build your first product or an established company
-                  needing to enhance your web presence, I&apos;d love to hear from you.
+                <h3 className="text-2xl font-semibold mb-6">
+                  Let's Build Great Products Together
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  I'm always open to full-time opportunities, freelance projects, contract roles, and product collaborations.
+                  Whether you're building a SaaS platform, AI product, enterprise application, or mobile app, I'd be happy to discuss how thoughtful design can create better user experiences and business value.
                 </p>
 
                 {/* Contact Methods */}
@@ -145,7 +146,7 @@ const Contact = () => {
                 </div>
 
                 {/* Social Links */}
-                <div className="mb-8">
+                {/* <div className="mb-8">
                   <h4 className="font-medium mb-4">Follow Me</h4>
                   <div className="flex gap-6">
                     {socials.map((s) => (
@@ -157,27 +158,27 @@ const Contact = () => {
                         onMouseEnter={() => setHovered(s.id)}
                         onMouseLeave={() => setHovered(null)}
                         className="relative p-3 sm:p-4 rounded-full bg-muted transition-all duration-300 hover:scale-110 hover:glow-effect flex items-center justify-center "
-                      >
-                        {/* Default Icon */}
-                        <div
+                      > */}
+                {/* Default Icon */}
+                {/* <div
                           className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${hovered === s.id ? "opacity-0" : "opacity-100"
                             }`}
                         >
                           {s.icon}
-                        </div>
+                        </div> */}
 
-                        {/* Hover Image */}
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
+                {/* Hover Image */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                {/* <img
                           src={s.hoverImg}
                           alt={s.id}
                           className={`absolute inset-0 m-auto w-8 h-8 object-contain transition-opacity duration-300 ${hovered === s.id ? "opacity-100" : "opacity-0"
                             }`}
                         />
-                      </a>
-                    ))}
+                      </a> */}
+                {/* ))}
                   </div>
-                </div>
+                </div> */}
 
                 {/* Resume Download */}
                 <Card className="p-6 card-gradient border-border">
@@ -268,7 +269,7 @@ const Contact = () => {
 
                 {/* Response Time */}
                 <div className="mt-6 text-center">
-                  <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
+                  <Badge variant="secondary" className="bg-primary/10 text-sm text-primary border-primary/20">
                     Usually responds within 24 hours
                   </Badge>
                 </div>

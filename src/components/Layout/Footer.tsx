@@ -54,9 +54,8 @@ const Footer = () => {
                 Uttam Singhal
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6 max-w-md">
-                Experienced UI/UX Designer specializing in creating intuitive, 
-                user-centered designs for web and mobile platforms. Skilled in wireframing, prototyping, 
-                and responsive design, delivering functional and visually appealing interfaces.
+                UI/UX Designer with 3+ years of experience designing SaaS platforms, AI products, enterprise applications, and responsive web & mobile experiences.
+                Passionate about transforming complex business problems into intuitive, scalable, and user-centered digital products.
               </p>
 
               {/* Contact Info */}
@@ -64,7 +63,7 @@ const Footer = () => {
                 <div className="flex items-center gap-3 text-sm">
                   <MapPin size={16} className="text-primary" />
                   <span className="text-muted-foreground">
-                    Sri Ganganagar, Rajasthan, India
+                    Sri Ganganagar, Rajasthan • Open to Remote & Relocation
                   </span>
                 </div>
                 <div className="flex items-center gap-3 text-sm">
@@ -100,7 +99,7 @@ const Footer = () => {
 
             {/* Connect & Status */}
             <div>
-              <h4 className="font-semibold mb-4 text-foreground">Connect</h4>
+              <h4 className="font-semibold mb-4 text-foreground">Let's Connect</h4>
               <div className="flex gap-3 mb-6">
                 {socialLinks.map((social, index) => (
                   <Link
@@ -118,16 +117,16 @@ const Footer = () => {
               <div className="flex flex-col space-y-3">
                 <Badge
                   variant="secondary"
-                  className="bg-green-500/10 text-green-500 border-green-500/20 text-xs"
+                  className="bg-green-500/10 text-green-500 border-green-500/20 text-sm"
                 >
                   <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse" />
-                  Available for work
+                  Available for Full-time
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="border-primary/20 text-primary text-xs"
+                  className="border-primary/20  text-primary text-sm"
                 >
-                  Open to freelance
+                  Freelance • Contract • Remote
                 </Badge>
               </div>
             </div>
@@ -141,11 +140,11 @@ const Footer = () => {
             <div className="flex flex-wrap justify-center sm:justify-start items-center gap-2 text-sm text-white">
               <span>© {currentYear} Uttam Singhal. Made with</span>
               <Heart size={14} className="text-red-500 animate-pulse" />
-              <span>using React & TypeScript</span>
+              <span>using Next.js & TypeScript</span>
             </div>
 
             <div className="flex items-center gap-4">
-              <span className="text-xs text-white">
+              <span className="text-sm text-white">
                 Last updated: {currentMonth} {currentYear}
               </span>
 
