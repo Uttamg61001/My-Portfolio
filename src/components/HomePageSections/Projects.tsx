@@ -13,7 +13,7 @@ export default function Projects() {
       description:
         "Designed a logistics and supply chain dashboard that simplifies operational workflows through real-time analytics, intuitive data visualization, responsive layouts, and user-centered dashboard experiences.",
       image: "thumbnail-2.webp",
-      link: "...",
+      link: "https://www.figma.com/design/xnT7HY0TOAwTUYt2ydrlVM/Assignment?node-id=1-3&t=gaxPpIoWYsq36WBZ-1",
       technologies: [
         "Figma",
         "Dashboard Design",
@@ -28,7 +28,7 @@ export default function Projects() {
       description:
         "Designed an AI-powered conversational platform focused on intuitive chat experiences, seamless communication workflows, responsive interfaces, and reusable UI components for web applications.",
       image: "thumbnail-3.webp",
-      link: "...",
+      link: "https://www.figma.com/design/nKRPi5J27RAgYDxHYONOBR/Urban-Chat?node-id=0-6373&t=KgdKQNnAKZIB1hnn-1",
       technologies: [
         "Figma",
         "AI Chat",
@@ -43,7 +43,7 @@ export default function Projects() {
       description:
         "Designed a modern digital agency website with responsive layouts, scalable UI components, engaging visual hierarchy, and conversion-focused user experiences across light and dark themes.",
       image: "thumbnail-1.webp",
-      link: "...",
+      link: "https://www.figma.com/design/D2opEHQGXDDlljrYnoScnF/RR-Technologies-Agency-landing-page?node-id=0-1&t=rjQRMWtMaTGsEg9m-1",
       technologies: [
         "Figma",
         "Responsive Design",
@@ -58,7 +58,7 @@ export default function Projects() {
       description:
         "Designed an AI dashboard that presents automation insights, analytics, and intelligent workflows through modern interfaces, reusable components, and intuitive data visualization.",
       image: "thumbnail-9.webp",
-      link: "...",
+      link: "https://www.figma.com/design/Necv44SJ9Qik7q8G5Zhoj6/Untitled?node-id=1-675&t=obfovtNgBErxrJy3-1",
       technologies: [
         "Figma",
         "Dashboard Design",
@@ -73,7 +73,7 @@ export default function Projects() {
       description:
         "Designed a mobile application that helps users discover temples, rituals, and spiritual content through a clean, accessible, and user-friendly interface with seamless navigation.",
       image: "thumbnail-6.webp",
-      link: "...",
+      link: "https://www.figma.com/design/YHBLH5RLOWQl9sIBruuwjp/Mandiram?node-id=1-18965&t=IhQ3og2ASTls2nc2-1",
       technologies: [
         "Figma",
         "Mobile UI",
@@ -88,7 +88,7 @@ export default function Projects() {
       description:
         "Designed a location-based mobile application enabling users to discover nearby spiritual mentors and events through intuitive search, maps, and streamlined user journeys.",
       image: "thumbnail-8.webp",
-      link: "...",
+      link: "https://www.figma.com/design/WWPXgz04Gtl5CDst76hSx5/Guru-ji-Finder-UI?node-id=1-13500&t=T7jsdMG5agNpyyS8-1",
       technologies: [
         "Figma",
         "Google Maps",
@@ -103,7 +103,7 @@ export default function Projects() {
       description:
         "Designed a modern movie discovery platform focused on seamless content exploration, intuitive navigation, responsive layouts, and an engaging entertainment experience.",
       image: "thumbnail-5.webp",
-      link: "...",
+      link: "https://www.figma.com/design/8tm46QNNHoyzXBT4mdgRev/Cineview?node-id=0-1&t=71zi2TfrGNX0Y7k2-1",
       technologies: [
         "Figma",
         "Responsive Design",
@@ -118,7 +118,7 @@ export default function Projects() {
       description:
         "Designed a high-converting digital agency website showcasing services, portfolio, and brand identity through modern layouts, scalable design systems, and responsive user experiences.",
       image: "thumbnail 10.webp",
-      link: "...",
+      link: "https://www.figma.com/design/WnietlVpcslaHh3fuH6pIl/Landing-Page?node-id=0-1&t=TMF6JPqkeC8MjKJz-1",
       technologies: [
         "Figma",
         "Design System",
